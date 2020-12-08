@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-   <?php echo 5*3 ?>
-</body>
+    <?php 
+    //однострочный комментарий
 
+    echo 'Hello world';
+    echo "!!!";
+    ?>
+
+</body>
+</html>
