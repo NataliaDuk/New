@@ -9,15 +9,12 @@
 
 <body>
     <?php
-    $many = 145;
-    $month = 12;
-    $percent = 0.75;
-    $s = $many;
-
-    for ($i = 1; $i <= $month; $i++) {
-        $s = $s + ($s / 100 * $percent)/12;
+    
+     while ($i < 10) {
+        $i = $i + 1;
+        echo $i;
+        echo "<br>";
     }
-    echo round($s, 2);
 
     ?>
 </body>
