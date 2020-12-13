@@ -9,10 +9,10 @@
 
 <body>
     <?php
-   do {
+    do {
         $i=$i+1;
-        echo $i;
-        echo "<br>";
+        echo $i. "<br>";
+        
     } while ($i < 10);
 
 
