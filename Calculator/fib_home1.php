@@ -9,16 +9,20 @@
 
 <body>
     <?php
-    $F = 15;
+    $F = $_POST["F"];
     $N1 = 0;
     $N2 = 1;
-    while ($i < $F) {
+    $i=0;
+    echo $N1 . ", ";
+    echo $N2 . ", ";
+    while ($i < $F-2) {
         $i++;
         $N = $N1 + $N2;
-        $N2 = $N1;
-        $N1 = $N;
+        echo $N . ", ";
+        $N1 = $N2;
+        $N2 = $N;
 
-        echo $N . "<br>";
+      
     }
 
     ?>
