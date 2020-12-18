@@ -20,7 +20,7 @@
         echo $N . ", ";
         $N1 = $N2;
         $N1 = $N;
-    } while ($i < $F-2)
+    } while ($i < $F-2);
     ?>
 </body>
 
