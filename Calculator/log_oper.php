@@ -27,6 +27,18 @@
 //     else {
 //         echo "No";
 //     }
-$a=2;
-echo (--$a)+2;
+// $a=2;
+// echo (--$a)+2;
 
+// $i = 5;
+// $result = $i++;
+// echo $result;
+
+// $x = 5; $x % 2;
+// echo $x;
+
+// $x = 2; $x-=2;
+// echo $x;
+
+$result = 2 + 2 * 2;
+echo $result;
