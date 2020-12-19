@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST_PHP</title>
-    <link rel="stylesheet" type="text/css" href="style10.css">
+ 
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <form action="test_PHP.php" method="post">
         <h2>1. Как присвоить переменной значение?</h2><br>
         
-           <input type="radio" name="N1" value="0">
+           <input type="radio" name="N1" value="1">
             $x = 5
             <br>
 
@@ -21,7 +21,7 @@
             $x => 5
             <br>
 
-            <input type="radio" name="N1" value="1">
+            <input type="radio" name="N1" value="0">
             $x == 5
             <br>
 
@@ -30,7 +30,7 @@
             <br>
     
         <h2>2. Какой тип значения будет в переменной $a после выполнения кода $a = '123';?</h2><br>
-        <input type="radio" name="N2" value="0">
+        <input type="radio" name="N2" value="1">
         string
         <br>
 
@@ -38,7 +38,7 @@
         float
         <br>
 
-        <input type="radio" name="N2" value="1">
+        <input type="radio" name="N2" value="0">
         int
         <br>
 
@@ -46,7 +46,7 @@
         boolean
         <br>
         <h2>3.Что будет в переменной $result после выполнения кода $result = 2 + 2 * 2;?</h2><br>
-        <input type="radio" name="N3" value="0">
+        <input type="radio" name="N3" value="1">
         6
         <br>
 
@@ -54,7 +54,7 @@
         8
         <br>
 
-        <input type="radio" name="N3" value="1">
+        <input type="radio" name="N3" value="0">
         4
         <br>
 
@@ -62,7 +62,7 @@
         2
         <br>
         <h2>4.Что будет в переменной $x после выполнения кода $x = 2; $x -= 2;?</h2><br>
-        <input type="radio" name="N4" value="1">
+        <input type="radio" name="N4" value="0">
         2
         <br>
 
@@ -70,7 +70,7 @@
         4
         <br>
 
-        <input type="radio" name="N4" value="0">
+        <input type="radio" name="N4" value="1">
         0
         <br>
 
@@ -78,7 +78,7 @@
         -2
         <br>
         <h2>5.Что будет в переменной $x после выполнения кода $x = 5; $x % 2;?</h2><br>
-        <input type="radio" name="N5" value="1">
+        <input type="radio" name="N5" value="0">
         1
         <br>
 
@@ -90,11 +90,11 @@
         0
         <br>
 
-        <input type="radio" name="N5" value="0">
+        <input type="radio" name="N5" value="1">
         5
         <br>
         <h2>6.Что будет в переменной $result после выполнения кода $i = 5; $result = $i++;?</h2><br>
-        <input type="radio" name="N6" value="1">
+        <input type="radio" name="N6" value="0">
         4
         <br>
 
@@ -102,7 +102,7 @@
         6
         <br>
 
-        <input type="radio" name="N6" value="0">
+        <input type="radio" name="N6" value="1">
         5
         <br>
 
@@ -110,11 +110,11 @@
         4
         <br>
         <h2>7.Что будет в переменной $result после выполнения кода $i = 5; $result = ++$i;?</h2><br>
-        <input type="radio" name="N7" value="1">
+        <input type="radio" name="N7" value="0">
         4
         <br>
 
-        <input type="radio" name="N7" value="0">
+        <input type="radio" name="N7" value="1">
         6
         <br>
 
@@ -126,11 +126,11 @@
         4
         <br>
         <h2>8.Что будет в переменной $result после выполнения кода $result = (true xor true)?</h2><br>
-        <input type="radio" name="N8" value="0">
+        <input type="radio" name="N8" value="1">
         false
         <br>
 
-        <input type="radio" name="N8" value="1">
+        <input type="radio" name="N8" value="0">
         0
         <br>
 
@@ -142,11 +142,11 @@
         true
         <br>
         <h2>9.Какая из этих конструкций не относится к циклам?</h2><br>
-        <input type="radio" name="N9" value="1">
+        <input type="radio" name="N9" value="0">
         while
         <br>
 
-        <input type="radio" name="N9" value="0">
+        <input type="radio" name="N9" value="1">
         isset
         <br>
 
@@ -158,7 +158,7 @@
         foreach
         <br>
         <h2>10.С помощью какого символа в PHP можно склеить 2 строки в одну?</h2><br>
-        <input type="radio" name="N10" value="1">
+        <input type="radio" name="N10" value="0">
         символ доллара
         <br>
 
@@ -166,12 +166,12 @@
         символ запятой
         <br>
 
-        <input type="radio" name="N10" value="0">
+        <input type="radio" name="N10" value="1">
         символ точки
-        <br>
-       <div class="one">
+        <br><br>
+      
         <button type="submit" class="submit" name="submitbtn" value="subm">Проверить</button>
-    </div>
+ 
     </form>
 
 </body>
