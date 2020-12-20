@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST_PHP</title>
- 
+    <link rel="stylesheet" href="style72.css">
 </head>
 
 <body>
+    <header class="headline">
+        <nav class="meny">
+            <a href="test_PHP_home.html">Главная</a>
+            <a href="#">Справочник PHP</a>
+            <a href="#">Курсы-IT</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </header>
     <h1>Тест по основам PHP</h1>
-    <form action="test_PHP.php" method="post">
+    <form action="test_PHP_home.php" method="post">
         <h2>1. Как присвоить переменной значение?</h2><br>
-        
-           <input type="radio" name="N1" value="1">
-            $x = 5
-            <br>
 
-            <input type="radio" name="N1" value="3">
-            $x => 5
-            <br>
+        <input type="radio" name="N1" value="1">
+        $x = 5
+        <br>
 
-            <input type="radio" name="N1" value="0">
-            $x == 5
-            <br>
+        <input type="radio" name="N1" value="3">
+        $x => 5
+        <br>
 
-            <input type="radio" name="N1" value="2">
-            $x === 5
-            <br>
-    
+        <input type="radio" name="N1" value="0">
+        $x == 5
+        <br>
+
+        <input type="radio" name="N1" value="2">
+        $x === 5
+        <br>
+
         <h2>2. Какой тип значения будет в переменной $a после выполнения кода $a = '123';?</h2><br>
         <input type="radio" name="N2" value="1">
         string
@@ -169,9 +177,9 @@
         <input type="radio" name="N10" value="1">
         символ точки
         <br><br>
-      
+
         <button type="submit" class="submit" name="submitbtn" value="subm">Проверить</button>
- 
+
     </form>
 
 </body>
