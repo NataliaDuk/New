@@ -1,8 +1,3 @@
-<!-- <?php
-        if (!empty($_POST)) {
-            $name = $_POST['text'];
-        }
-        ?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,10 +16,9 @@
 
     <?php
 
-
     $name = $_POST["text"];
-    print_r($name);
-    if (is_int($name)); {
+    
+
         $numbers = [
             1 => "один",
             2 => "два",
@@ -33,11 +27,11 @@
 
         ];
 
-        foreach (str_split($name) as $value) {
+        foreach (str_split($name) as $value)  {
             echo " " . $numbers[$value];
         }
-    }
-  
+    
+
 
     // echo $name=str_replace($numbers, $numbers[$value], $name);
 
