@@ -10,6 +10,7 @@
 <body>
 
     <?php
+    
     $name = $_POST["n"];
     // print_r($_POST);
     $numbers = [

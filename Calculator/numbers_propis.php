@@ -17,7 +17,14 @@
     <?php
 
     $name = $_POST["text"];
-    // if (is_int($name)) 
+    // foreach ($name as $value1) {
+    //     if (is_numeric($name)) echo
+    //         var_export($value1);
+    // }
+
+    // echo $n=str_replace(is_numeric($name), "0", $name);
+    // }
+
     $numbers = [
         1 => "один",
         2 => "два",
@@ -32,10 +39,8 @@
     // foreach ($name as &$v) {
     //     if ($v <> is_int($name)) $v++;
     // }
-    // foreach ($name as $v1) {
-    //     echo "$v1";
-    // }
-    // echo $n=str_replace("is_int($name)", "", $name);
+    
+
 
 
 
