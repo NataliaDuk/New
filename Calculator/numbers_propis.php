@@ -17,20 +17,27 @@
     <?php
 
     $name = $_POST["text"];
-    
+    // if (is_int($name)) 
+    $numbers = [
+        1 => "один",
+        2 => "два",
+        3 => "три",
+        4 => "четыре"
 
-        $numbers = [
-            1 => "один",
-            2 => "два",
-            3 => "три",
-            4 => "четыре"
+    ];
 
-        ];
+    foreach (str_split($name)  as $value) {
+        echo " " . $numbers[$value];
+    }
+    // foreach ($name as &$v) {
+    //     if ($v <> is_int($name)) $v++;
+    // }
+    // foreach ($name as $v1) {
+    //     echo "$v1";
+    // }
+    // echo $n=str_replace("is_int($name)", "", $name);
 
-        foreach (str_split($name) as $value)  {
-            echo " " . $numbers[$value];
-        }
-    
+
 
 
     // echo $name=str_replace($numbers, $numbers[$value], $name);
