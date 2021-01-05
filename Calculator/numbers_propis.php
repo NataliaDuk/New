@@ -17,35 +17,23 @@
     <?php
 
     $name = $_POST["text"];
-    // foreach ($name as $value1) {
-    //     if (is_numeric($name)) echo
-    //         var_export($value1);
-    // }
-
-    // echo $n=str_replace(is_numeric($name), "0", $name);
-    // }
 
     $numbers = [
+        0 => "ноль",
         1 => "один",
         2 => "два",
         3 => "три",
         4 => "четыре"
 
     ];
-
-    foreach (str_split($name)  as $value) {
-        echo " " . $numbers[$value];
+    $numbers1 = str_split($name);
+    foreach ($numbers1  as $value) {
+        if (is_numeric($value)) {
+            echo " " . $numbers[$value];
+        } else {
+            echo $value;
+        }
     }
-    // foreach ($name as &$v) {
-    //     if ($v <> is_int($name)) $v++;
-    // }
-    
-
-
-
-
-
-    // echo $name=str_replace($numbers, $numbers[$value], $name);
 
     ?>
 
