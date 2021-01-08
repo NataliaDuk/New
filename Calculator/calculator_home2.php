@@ -10,7 +10,6 @@
 
 <body>
     <nav class="meny">
-        <a href="numbers_propis.html">Главная</a>
         <a href="https://www.php.net/manual/ru/langref.php">Справочник PHP</a>
         <a href="https://itstep.by/">Курсы-IT</a>
 
@@ -28,14 +27,7 @@
 
     $numbers = ["ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"];
     $numbers1 = str_split($name);
-    // foreach ($numbers1  as $value) {
-    //     if (is_numeric($value)) {
-    //         echo " " . '<span style="font-size:1.25em; ;font-weight:bold;">'.$numbers[$value].'</span>';
-    //          //echo $numbers[$value]; 
-    //     } else {
-    //         echo '<span style="font-size:1.25em;color:#0e3c68;font-weight:bold;">'.$value.'</span>';
-    //     }
-    // }
+    echo "Результат обработки: " ;
     foreach ($numbers1  as $value) {
         if (is_numeric($value)) {
             echo " " . $numbers[$value];
@@ -47,7 +39,7 @@
 
     <h1>Задача 2.Текстовый калькулятор.</h1>
     <form class="meny1" method="post">
-        <p> Введите слагаемые</p>
+        <p> Введите слагаемые от 1 до 10 прописью</p>
         <p><textarea cols="20px" rows="2px" name="slag1"></textarea></p>
         <p><textarea cols="20px" rows="2px" name="slag2"></textarea></p>
         <input type="submit" value="Отправить">
@@ -70,7 +62,6 @@
         "десять" => 10
 
     ];
-
 
     $sum = $numbers2[$num1] + $numbers2[$num2];
     
@@ -99,7 +90,7 @@
 
     ];
 
-    echo $str[$sum];
+    echo "Результат вычисления: " . $str[$sum];
 
     ?>
 

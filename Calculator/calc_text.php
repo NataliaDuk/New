@@ -32,14 +32,14 @@
         "девять" => 10
 
     ];
-    foreach (str_split($num1)  as $value) {
-       $n1=$numbers1[$value];
-    }
-    foreach (str_split($num2)  as $value) {
-        $n2=$numbers1[$value];
-    }
+    // foreach ($num1  as $value) {
+    //    $n1=$numbers1[$value];
+    // }
+    // foreach ($num2  as $value) {
+    //     $n2=$numbers1[$value];
+    // }
     // $s = $n1 + $n2;
-    echo $n1+$n2;
+    echo $numbers1[$num1]+$numbers1[$num2];
     // // }
     // foreach ($name as &$v) {
     //     if ($v <> is_int($name)) $v++;
