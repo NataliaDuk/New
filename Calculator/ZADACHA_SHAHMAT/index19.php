@@ -17,33 +17,44 @@
 
     </nav>
     <img class="pritcha" src="img13.jpg" alt="">
+    <h2> Определим количество зерен и вес зерна на шахматной доске.</h2>
     <form class="meny1" method="post">
         <p> Введите количество строк шахматной доски</p>
         <p><textarea cols="10px" rows="2px" name="rows1"></textarea></p>
-        <p> Введите количество столцов шахматной доски</p>
+        <p> Введите количество столбцов шахматной доски</p>
         <p><textarea cols="10px" rows="2px" name="cols1"></textarea></p>
+        <p> Введите вес одного зернышка в граммах.</p>
+        <p><textarea cols="10px" rows="2px" name="massa"></textarea></p>
         <input type="submit" value="Отправить">
     </form><br>
     <?php
 
     $rows = $_POST["rows1"];
     $cols = $_POST["cols1"];
+    $m = $_POST["massa"];
 
     $table = '<table class="shahmat">';
-    
+    $s = 1;
     for ($tr = 1; $tr <= $rows; $tr++) {
         $table .= '<tr>';
         for ($td = 1; $td <= $cols; ++$td) {
-            $table .= '<td>' . ($td)*2 . '</td>';
+            $s = $s * 2;
+            $table .= '<td>' . '</td>';
         }
 
         $table .= '</tr>';
     }
 
     $table .= '</table>';
-    echo $table; // сделали эхо всего 1 раз
+    echo $table;
+
+    echo "<h3>"."Результат: " ."</h3>"." ";
+    echo  "<h3>"."Количество зерен на шахматной доске: " . number_format($s, 0, ',', ' ') ."</h3>";
+
+    echo  "<h3>"."Вес зерна на шахматной доске составляет: " . number_format(($m * $s / 1000000), 0, ',', ' '). " тонн"."</h3>";
 
     ?>
+
 </body>
 
 </html>
