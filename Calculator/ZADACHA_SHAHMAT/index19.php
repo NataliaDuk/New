@@ -28,30 +28,38 @@
         <input type="submit" value="Отправить">
     </form><br>
     <?php
+    include "functions.php";
 
     $rows = $_POST["rows1"];
     $cols = $_POST["cols1"];
     $m = $_POST["massa"];
 
-    $table = '<table class="shahmat">';
-    $s = 1;
-    for ($tr = 1; $tr <= $rows; $tr++) {
-        $table .= '<tr>';
-        for ($td = 1; $td <= $cols; ++$td) {
-            $s = $s * 2;
-            $table .= '<td>' . '</td>';
-        }
 
-        $table .= '</tr>';
-    }
+    // $table = '<table class="shahmat">';
+    // $c = 1;
+    // $s = 0;
+    // for ($i = 1; $i <= $rows; $i++) {
+    //     $table .= '<tr>';
+    //     for ($j = 1; $j <= $cols; ++$j) {
+    //         $s += $c;
+    //         $c *= 2;
+    //         $table .= '<td></td>';
+    //     }
 
-    $table .= '</table>';
-    echo $table;
+    //     $table .= '</tr>';
+    // }
 
-    echo "<h3>"."Результат: " ."</h3>"." ";
-    echo  "<h3>"."Количество зерен на шахматной доске: " . number_format($s, 0, ',', ' ') ."</h3>";
+    // $table .= '</table>';
+    // echo $table;
 
-    echo  "<h3>"."Вес зерна на шахматной доске составляет: " . number_format(($m * $s / 1000000), 0, ',', ' '). " тонн"."</h3>";
+    echo createTable($rows, $cols);
+
+    $s = countZerno($rows, $cols);
+    
+    echo "<h3>Результат: </h3>";
+    echo  "<h3>Количество зерен на шахматной доске: " . number_format($s, 0, ',', ' ') . "</h3>";
+
+    echo  "<h3> Вес зерна на шахматной доске составляет: " . number_format(($m * $s / 1000000), 0, ',', ' ') . " тонн</h3>";
 
     ?>
 
