@@ -9,7 +9,7 @@
 
 <body>
     <h1>Зарплатная ведомость</h1>
-    <table border="2"  width="800px">
+    <table border="2" width="800px">
         <tr>
             <th>N</th>
             <th>Фамилия</th>
@@ -17,6 +17,7 @@
         </tr>
 
         <?php
+        include "funct_ved.php";
 
         $vedomost1 = [
             [1, "Иванов", 1550],
@@ -25,20 +26,20 @@
             [4, "Фролов", 1700],
         ];
 
-        function arrayName($vedomost)
+        // function arrayName($vedomost)
+        // {
+        //     foreach ($vedomost as list($a, $b, $c)) {
+        //         $html = "<tr>";
+        //         echo "<td>$a</td>";
+        //         echo "<td>$b</td>";
+        //         echo "<td>$c</td>";
+        //         echo "</tr>";
+        //     }
+        //     return $html;
+        // }
 
-        {
-            foreach ($vedomost as list($a, $b, $c)) {
-                $html = "<tr>";
-                echo "<td>$a</td>";
-                echo "<td>$b</td>";
-                echo "<td>$c</td>";
-                echo "</tr>";
-            }
-            return $html;
-        }
 
-        echo arrayName($vedomost1);
+        echo htmlTable($vedomost1);
 
         ?>
     </table>
