@@ -1,0 +1,46 @@
+body {
+    background-image: url(2-format10640.jpg);
+    background-size: 100%;
+     
+}
+  
+    h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid blueviolet;
+     width: 800px;
+  margin: auto;
+    font: bold 20pt Arial, Helvetica, sans-serif;
+    
+}
+th, td {
+    border: 2px solid blueviolet;
+    padding: 10px 15px;
+    width: 30%;
+
+ }
+
+ th {
+    
+    background-color: #C5DDE8;   
+}
+td {
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  
+}
+td:first-child {
+    width: 10%;
+ }
+
+ th:first-child {
+    width: 10%;
+ }
+
+
+

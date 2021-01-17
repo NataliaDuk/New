@@ -1,14 +1,14 @@
 <?php
 function htmlTable($table)
 {
-    $html = "<table border='2' width='800px'>";
+    $html = "<table>";
 
-    foreach ($table as $row) {
+    foreach ($table as $rows) {
 
         $html .= "<tr>";
 
-        foreach ($row as $col) {
-            $html .= "<td>$col</td>";
+        foreach ($rows as $cols) {
+            $html .= "<td>$cols</td>";
         }
 
         $html .= "</tr>";
