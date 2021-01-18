@@ -1,38 +1,43 @@
 body {
     background-image: url(question-mark.jpg);
-    background-size: 100%;
-     
+    background-size: 100%;    
 }
   
-    h1 {
-        text-align: center;
-        text-shadow: 3px 1px 3px black;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 40pt;
-        color: rgb(11, 179, 11);
+h1 {
+    text-align: center;
+    text-shadow: 3px 1px 3px black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35pt;
+    color: rgb(11, 179, 11);
 }
 
 h2 {
-    margin-left: 40%; 
-    margin-top: 80px;
+    margin-left: 10%; 
+    margin-top: 50px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30pt;
     color:darkviolet
     
 }
-.punkt {
-    margin-left: 20%;
-    margin-top: 40px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 40pt;
-    color:black;
-    text-shadow: 3px 1px pink;
-
+.meny {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 800px;
+    height: 550px;
+    background: whitesmoke;
+    border-color: #e3e3e3;
+    border-width: 20px;
+    border-style: groove;
+ 
 }
-
-/* .size {
-    width: 60px;
-} */
+.punkt {
+    margin-left: 30%;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color:rgb(90, 89, 89);
+    text-shadow: 4px 2px pink;
+}
 
 .button {
   font-weight: 700;
@@ -40,12 +45,14 @@ h2 {
   color: white;
   text-decoration: none;
   padding: 1em 1em calc(.8em + 3px);
-  border-radius: 3px;
+  border-radius: 15px;
   background: rgb(64,199,129);
   box-shadow: 0 -3px rgb(53,167,110) inset;
   transition: 0.2s;
 } 
-.button:hover { background: rgb(53, 167, 110); }
+.button:hover { 
+    background: rgb(53, 167, 110); 
+}
 .button:active {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
