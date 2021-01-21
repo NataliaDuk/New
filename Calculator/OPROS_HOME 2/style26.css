@@ -21,9 +21,8 @@ h2 {
 }
 .meny {
     margin-left: 30%;
-    margin-top: 10%;
     width: 800px;
-    height: 550px;
+    height: 600px;
     background: whitesmoke;
     border-color: #e3e3e3;
     border-width: 20px;
@@ -32,7 +31,7 @@ h2 {
 }
 .punkt {
     margin-left: 30%;
-    margin-top: 20px;
+    margin-top: 15px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30pt;
     color:rgb(90, 89, 89);
@@ -57,3 +56,14 @@ h2 {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
 }
+.start2 img {
+    
+    display: block;
+    width: 350px;
+    height: 300px;
+    margin: 10px 800px;
+    border-radius: 50%;
+    
+}
+
+    
