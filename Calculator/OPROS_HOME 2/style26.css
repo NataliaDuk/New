@@ -59,6 +59,7 @@ h2 {
 .start2 img {
     
     display: block;
+    float: right;
     width: 350px;
     height: 300px;
     margin: 10px 800px;

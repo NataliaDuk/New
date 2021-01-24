@@ -16,7 +16,6 @@ $N1 = $_POST["N1"];
 
 $data =  file_get_contents("opros_1.txt");
 
-
 $data[$N1] = ($data[$N1]+1)."\n";
 $s=$data[0]+$data[1]+$data[2]+$data[3];
 
@@ -28,14 +27,41 @@ echo "<h2>Нормальный: " . round($data[2]*100/$s, 1) . "%<h2>";
 echo "<h2>Плохой: " . round($data[3]*100/$s, 1) . "%<h2>";
 echo "<h1>ИТОГО: " .$s. " голосов<h1>";
 echo "</div>";
-// $saveData = explode("","opros_1.txt");
+
 
 $saveData = $data[0] . $data[1] . $data[2] . $data[3];
 file_put_contents("opros_1.txt", $saveData);
 
 ?>
-// <div class="start2">
-//         <img src="img11.jpg" alt="name"></div>
-// </body>
+<form action="" method="POST">
+        <div class="meny">
+            <?php
+            foreach ($ as $key => $value) {
+                # code...
+            }
+        <h1>Как Вы оцениваете внешний вид нашего веб-сайта?</h1><br>
+        <div class="punkt">
+            <input class="size" type="checkbox" name="N1" value="0">
+            Очень хороший
+            <br>
 
-// </html>
+            <input type="checkbox" name="N1" value="1">
+            Хороший
+            <br>
+
+            <input type="checkbox" name="N1" value="2">
+            Нормальный
+            <br>
+            <input type="checkbox" name="N1" value="3">
+            Плохой
+            <br>
+            <br>
+            <input type="submit" class="button" value="ГОЛОСОВАТЬ">
+        </div>
+    </div>
+    </form>
+<div class="start2">
+        <img src="img11.jpg" alt="name"></div>
+</body>
+
+</html>
