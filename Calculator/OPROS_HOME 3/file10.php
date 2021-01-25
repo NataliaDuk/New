@@ -11,57 +11,48 @@
 <body>
 
 <?php
-
-$N1 = $_POST["N1"];
-
-$data =  file_get_contents("opros_1.txt");
-
-$data[$N1] = ($data[$N1]+1)."\n";
-$s=$data[0]+$data[1]+$data[2]+$data[3];
-
-echo "<div class=meny>";
-echo "<h1>Результаты голосования: <h1>"; 
-echo "<h2>Очень хороший: " . round($data[0]*100/$s, 1) . "%<h2>";
-echo "<h2>Хороший: " . round($data[1]*100/$s, 1). "%<h2>";
-echo "<h2>Нормальный: " . round($data[2]*100/$s, 1) . "%<h2>";
-echo "<h2>Плохой: " . round($data[3]*100/$s, 1) . "%<h2>";
-echo "<h1>ИТОГО: " .$s. " голосов<h1>";
-echo "</div>";
+include "config1.php";
+$data = file($fileName);
+if (isset($_POST['answer'])) {
+    $currentAnswer = $_POST['answer'];
+    $buff = explode($separate, $data[$currentAnswer + 1]);
+    $buff[1] += 1;
+    $buff[1] .= "\n";
+    $data[$currentAnswer + 1] = $buff[0] . $separate . $buff[1];
+    file_put_contents($fileName, implode("", $data));
+}
+$question = $data[0];
+unset($data[0]);
 
 
-$saveData = $data[0] . $data[1] . $data[2] . $data[3];
-file_put_contents("opros_1.txt", $saveData);
+$answers = [];
 
+foreach ($data as $value) {
+    $answers[] = explode($separate, $value);
+}
+
+// print_r($answers);
 ?>
-<form action="" method="POST">
-        <div class="meny">
-            <?php
-            foreach ($ as $key => $value) {
-                # code...
-            }
-        <h1>Как Вы оцениваете внешний вид нашего веб-сайта?</h1><br>
-        <div class="punkt">
-            <input class="size" type="checkbox" name="N1" value="0">
-            Очень хороший
-            <br>
 
-            <input type="checkbox" name="N1" value="1">
-            Хороший
-            <br>
-
-            <input type="checkbox" name="N1" value="2">
-            Нормальный
-            <br>
-            <input type="checkbox" name="N1" value="3">
-            Плохой
-            <br>
-            <br>
-            <input type="submit" class="button" value="ГОЛОСОВАТЬ">
-        </div>
+<form action="?" method="POST">
+<div class=meny>
+   <h1> <?= $question ?></h1>
+    <br>
+ 
+    <?php
+ 
+    foreach ($answers as $key => $value) {
+        echo "<h2>";
+        
+        $count = $value[1] * 1;
+        echo "<input type='radio' value='$key' name='answer'><div class='graph'> $value[0] ($count)</div><br>\n";
+        echo "</h2>";
+    }
+    
+    ?>
+     <input type="submit" class="button" value="ГОЛОСОВАТЬ">
     </div>
-    </form>
-<div class="start2">
-        <img src="img11.jpg" alt="name"></div>
+</form>
 </body>
 
 </html>
