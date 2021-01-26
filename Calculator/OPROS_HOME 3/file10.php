@@ -40,14 +40,19 @@ foreach ($data as $value) {
     <br>
  
     <?php
- 
+    $s=0;
     foreach ($answers as $key => $value) {
         echo "<h2>";
         
+        // $procent=$value[1]*100/$s;
         $count = $value[1] * 1;
+    
         echo "<input type='radio' value='$key' name='answer'><div class='graph'> $value[0] ($count)</div><br>\n";
+       
         echo "</h2>";
+        echo $s=arraysum($value);
     }
+    
     
     ?>
      <input type="submit" class="button" value="ГОЛОСОВАТЬ">
