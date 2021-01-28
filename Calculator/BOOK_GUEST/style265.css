@@ -1,0 +1,40 @@
+body {
+    background-image: url(defensoria-publica_shutterstock.jpg);
+    background-size: 100%;    
+}
+  
+h1 {
+   text-align: center;
+    text-shadow: 3px 1px 3px black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60pt;
+    color:red;
+    
+}
+table {
+    
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 1200px; 
+    font: bold 16pt Arial, Helvetica, sans-serif;
+}
+h2 {
+   
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.ident {
+    margin-left: 30%;
+    width: 800px;
+    height: 300px;
+}
+
+.text {
+    margin-left: 20%;
+    
+  
+    
+ 
+}
+
+    
