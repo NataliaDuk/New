@@ -14,8 +14,8 @@ body {
 table {
     border-collapse: collapse;
     border: 3px solid blueviolet;
-     width: 800px;
-  margin: auto;
+    width: 800px;
+    margin: auto;
     font: bold 20pt Arial, Helvetica, sans-serif;
     
 }
