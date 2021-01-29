@@ -35,18 +35,8 @@
             foreach ($records as $record) {
                 $row = explode("\n", trim($record));
                 // print_r($row);
-                if(!empty($row[0])){
-                    $logincheck = true;
-                    echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
-                  }
-                  else {
-                    $logincheck = false;
-                    $errors[] = "Ошибка! Заполните поле Логин!";
-                  }
-           
-            
-                
-            }
+                  echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+                  } 
             echo "</table>";
             ?>
             </div>
