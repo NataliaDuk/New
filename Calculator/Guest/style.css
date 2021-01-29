@@ -1,0 +1,49 @@
+body {
+scrollbar-face-color: #333333;
+	scrollbar-highlight-color: green; 
+	scrollbar-shadow-color: limegreen; 
+	scrollbar-3dlight-color: #555555; 
+	scrollbar-arrow-color: green; 
+	scrollbar-track-color: green; 
+	scrollbar-darkshadow-color: #000000;
+}
+table {
+color:limegreen;
+font: 8pt verdana;
+border:1px green solid;
+background-color: #333333;
+}
+.t_dop{
+color:#fffddd;
+font: 8pt verdana;
+border:0px;
+background-color: #666666;
+}
+input {border: 1px solid black; width: 200px; font: 8pt Verdana; background-color: #999999; color: white;}
+textarea {border: 1px solid black; width: 200px; height:100px; font: 8pt Verdana; background-color: #999999; color: white;font-weight: normal;}
+.re{
+color:black;
+font: 8pt verdana;
+border:1px silver solid;
+background-color: silver;
+}
+A  {
+	color : yellow;
+	text-decoration : none;
+}
+
+A:Visited  {
+	color : #999999;
+	text-decoration :none;
+}
+
+A:Active  {
+	color : white;
+	text-decoration :none;
+}
+
+A:Hover  {
+	color : yellow;
+	text-decoration : none ;
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<title>Readme - руководство по Jedic Guestbook</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="Author" content="Sergey Golubev - Сергей Голубев">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<LINK HREF="style.css" TYPE="text/css" REL="stylesheet">
+</head>
+<body bgcolor=black background=img/back.jpg bgproperties="fixed"><center>
+<table cellspacing=0 cellpadding=2 width=430>
+<tr valign=top><td width=100%><font color=limegreen><p align=right><b>Readme - руководство
+</b></p></font></td></tr>
+</table>
+<br>
+<table cellspacing=0 cellpadding=2 width=430>
+<tr valign=top><td width=100%><font color=limegreen><p align=left><b>
+<center> Jedic Guestbook</center><br>
+<li> Голубев Сергей (Джедай) <a href='http://jedic.h14.ru'>http://jedic.h14.ru</a>
+<li> Программа написана на языке PHP. 
+<li> Требования: Win\Unix\Linux; PHP4 или выше. 
+<li> 2004-2005.
+<li> dubkidubki@list.ru<br><br>
+Readme в архиве начаная с версии 2.1<br><br>
+Структура:
+<li>index.php - главная страница гостевой книги.
+<li>inc.php - библиотека гостевой книги.
+<li>go.php - страница флуд-контроля и записи сообщения.
+<li>index.php - главная страница гостевой книги.
+<li>config.php - конфигурационный файл гостевой книги.
+<li>login.php - главная страница админки гостевой книги.
+<li>inc_adm.php - библиотека админки.
+<li>index.js - библиотека JavaScript функций.
+<li>style.css - таблица каскадных стилей.
+<li>Readme.html - данный файл. Прочти меня.
+<li>tpl/head.html - шаблон-верх гостевой книги.
+<li>tpl/end.html - шаблон-низ гостевой книги.
+<li>tpl/messages.txt - база сообщений.
+<li>tpl/.htaccess - Apache файл директории.
+<li>tpl/end.html - шаблон-низ гостевой книги.
+<li>tpl/admin_log.txt - лог-файл администраторов.
+<li>tpl/user_log.txt - лог-файл пользователей.
+<li>tpl/admin_user.txt - реквизиты администратора.
+<li>tpl/mat.txt - файл запрещенных слов.
+<li>img/smiley/ - папка со смайлами.
+</p></font></td></tr></table><br>
+<table cellspacing=0 cellpadding=2 width=430>
+<tr valign=top><td width=100%><font color=limegreen><p align=right>
+<b><center>Установка</center><br>
+Для начала ознакомьтесь с пользовательским соглашением!
+В случае согласия распакуйте архив с файлами в рабочую папку<br>
+Например: (http://my_page.ru/gb/)<br>
+Установить на папку "tpl" и внутри находящиеся файлы права на чтение и запись! (CHMOD [<i>Для Win никаких CHMOD устанавливать не надо!!!</i>])<br>
+Войдите в админку с логином <u>admin</u> и паролем <u>admin</u>. Для безопасности установите себе новый логин с паролем!<br>
+Настройте конфигурационные файлы. Для доступа к "админке" ссылайтесь на страницу login.php!<br>
+Все! Установка завершена!<br>
+Тех. поддержка: dubkidubki@list.ru
+</p></font></td></tr>
+</table>
+<br>
+<table cellspacing=0 cellpadding=2 width=430>
+<tr valign=top><td width=100%><font color=limegreen><p align=right><b>
+<center><b>FAQ
+</b></center><br>
+Ответы на часто задаваемые вопросы!
+<br><br>
+*** Выводится сообщение о том, что база сообщений не найдена?<br>
+	Ответ: Проверить наличие файла inc.php и файла tpl/messages.txt. Проверить права доступа на данные файлы, на последний должно быть "чтение и запись"!
+<br><br>
+*** Сообщения в гостевой книге не сохраняются?<br>
+	Ответ: Установите права на чтение и запись базы сообщений (каталог tpl)
+<br><br>
+*** Как сменить пароль?<br>
+	Ответ: Пароль сменить можно так:
+	Заходим в админку с дефолтным логином и пасом. (admin, admin)
+	Нажимаем "Изменить пароль"
+	Заполняем формы и жмем кнопку. Входим в админку с новыми реквизитами.
+<br><br>
+*** Как изменить или добавить смайлы?<br>
+	Ответ: Начаная с версии 2.1 сделать это не составляет труда.
+	Просто в папку img/smiley кладем нужные смайлы! Вот и все! Не рекомендуется использовать большие картинки!!
+<br><br>
+*** Как изменить настройки гостевой книги?<br>
+	Ответ: все настройки хранятся в файле config.php
+	В скором времени в админке будет досупна его настройка!
+<br><br>
+*** Безопасно ли хранение пароля администратора.<br>
+	Ответ: конечно безопасно. Во-первых, в каталоге с файлом пароля хранится файл .htaccess, который запрещает открывать 
+любой файл из каталога tpl через браузер. Во-вторых, пароль находится в зашифрованном виде и расшифровать его очень сложно.
+<br><br>
+*** Как изменить дизайн книги?<br>
+	Ответ: если Вы имеете опыт работы с PHP-кодом, то вы сможете полностью изменить дизайн книги и разработать дополнительные модули, а иначе просто изменяйте атрибуты в файле style.css!
+<br><br>
+*** Есть ли фильтрация запрещенных слов?<br>
+	Ответ: Да, есть "антимат-контроль". В файле tpl/mat.txt через пробел находится список запрещенных слов в сообщениии! В самом сообщении они будут меняться на звездочки!
+<br><br>
+тех.поддержка: dubkidubki@list.ru (с пометкой "JG - FAQ")<br><br>
+
+Все вопросы, пожелания и критику направляйте на dubkidubki@list.ru<br>
+Голубев Сергей
+</b></p></font></td></tr>
+</table>
+<br><table  cellspacing=0 cellpadding=0 width='430'><tr valign=top align=center><td width=100%><font color=red size=1>Jedic Guestbook v.2.2.5<br>Разработка програмного кода и дизайна: <a href=http://jedic.h14.ru>Голубев Сергей.</a><br>Все права защищены. 2004-2005 &copy <b><a href="mailto:dubkidubki@list.ru">Джедай</a></b></td></tr></table>

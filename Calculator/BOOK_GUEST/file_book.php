@@ -9,20 +9,7 @@
         die();
     }
   
-            $error = "";
-     $actionName = $_POST["name"];
-
-  if (!empty($actionName)) 
-  {
-    $name = trim($name);
    
-      
-      if (empty($name)) // если не введено имя
-      {
-        $actionName = "";
-        $error = $error."Вы не ввели имя\n";
-      }
-  }
       ?>
     
     
@@ -48,10 +35,19 @@
             foreach ($records as $record) {
                 $row = explode("\n", trim($record));
                 // print_r($row);
-                echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+                if(!empty($row[0])){
+                    $logincheck = true;
+                    echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+                  }
+                  else {
+                    $logincheck = false;
+                    $errors[] = "Ошибка! Заполните поле Логин!";
+                  }
+           
+            
+                
             }
             echo "</table>";
-
             ?>
             </div>
             <div class=ident>
@@ -63,9 +59,11 @@
                     <h2>Введите сообщение</h2>
                     <input type="text" name="text">
                     <input type="submit" value="ok">
+                    
                 </form>
             </div>
             
     </body>
 
     </html>
+   
