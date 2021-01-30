@@ -24,7 +24,7 @@ h2 {
     
 }
 .ident {
-    margin-left: 40%;
+    margin-left: 20%;
    
 }
 .user {
@@ -45,7 +45,6 @@ h2 {
 }
 .input {
     margin-left: 10%;
-    margin-top: 20px;
     width: 60px;
     height: 40px;
     font: bold 16pt Arial, Helvetica, sans-serif;
@@ -54,11 +53,14 @@ h2 {
 }
 
 .text {
-    margin-left: 20%;
+    margin-left: 20%;  
+}
+img {
+    margin-left: 50px;
+    /* margin-top: 5px; */
+    float: left;
+    width: 15%;
     
-  
-    
- 
 }
 
     
