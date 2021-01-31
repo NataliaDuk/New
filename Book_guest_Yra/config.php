@@ -1,4 +1,24 @@
 <?php
+// function validate($_POST)
+// {
+//     $errors = '';
+//     foreach ($row as $v) {
+//         if (empty($row['value'])) {
+//             $errors .= $nameErr = "Name is required" .
+//                 $emailErr = "Email is required" .
+//                 $websiteErr = "Website is required" .
+//                 $commentErr = "Comment is required" .
+//                 $genderErr = "Gender is required";
+//         }
+//     }
+//     return $errors;
+// }
+// if ($errors = validate($row)) {
+//     $errors;
+// } else {
+//     echo 'Ok';
+// }
+
 $nameErr = $emailErr = $genderErr = $commentErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
@@ -54,11 +74,14 @@ function test_input($data)
     $data = htmlspecialchars($data);
     return $data;
 }
+
 if (!empty($name) & !empty($email) & !empty($website) & !empty($comment) & !empty($gender)){
-$row = "\n<----->\n" . $name . "\n" . $email .
-    "\n" . $website . "\n" . $comment . "\n" . $gender .
-     "\n" . date("d.F.Y") . "\n" . date("H:i");
-file_put_contents("quest.txt", $row, FILE_APPEND);
-}
-// header("Location: ?");
-// die();
+    $row = "\n<----->\n" . $name . "\n" . $email .
+        "\n" . $website . "\n" . $comment . "\n" . $gender .
+         "\n" . date("d.F.Y") . "\n" . date("H:i");
+    file_put_contents("quest.txt", $row, FILE_APPEND);
+    header("Location: ?");
+    die();
+    }
+    
+?>

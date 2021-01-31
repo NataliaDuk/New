@@ -16,7 +16,7 @@ require_once "config.php";
     <h2>My guestbook</h2>
     <form method="POST" action="?">
         Name: <input type="text" name="name">
-        <span class="error">* </span>
+        <span class="error">* <?php echo $nameErr; ?></span>
         <br><br>
         E-mail: <input type="text" name="email">
         <span class="error">* <?php echo $emailErr; ?></span>
