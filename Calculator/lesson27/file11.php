@@ -1,4 +1,4 @@
 <?php
 $str = 'Привет Маша. Привет Саша. Привет Даша. Привет Наташа.';
 
-echo preg_match_all('/Привет/', $str, $m);
+echo preg_match_all('/привет/iu', $str, $m);
