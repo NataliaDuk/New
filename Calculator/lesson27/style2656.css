@@ -1,0 +1,22 @@
+body {
+    background-image: url(fon.jpg);
+    background-size: 100%;    
+}
+h1 {
+    text-align: center;
+     text-shadow: 3px 1px 3px black;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size: 60pt;
+     color:brown;
+     
+ }
+
+div {
+   
+    text-align: center;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+
+}
+
+
+    
