@@ -1,0 +1,59 @@
+body {
+    background-image: url(defensoria-publica_shutterstock.jpg);
+    background-size: 100%;    
+}
+  
+h1 {
+   text-align: center;
+    text-shadow: 3px 1px 3px black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color:blue;
+    
+}
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.ident {
+    margin-left: 40%;
+   
+}
+.user  {
+    width: 300px;
+    height: 30px;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+}
+.number {
+    width: 300px;
+    height: 30px;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+}
+.mail {
+    width: 300px;
+    height: 30px;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+}
+.social {
+    width: 450px;
+    height: 150px;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+
+}
+.input {
+    margin-left: 10%;
+    width: 60px;
+    height: 40px;
+    font: bold 16pt Arial, Helvetica, sans-serif;
+    color: blue;
+
+}
+
+.text {
+    margin-left: 20%;  
+}
+
+
+.textError  {
+    font: 10pt Arial, Helvetica, sans-serif;
+    color: red;
+}
