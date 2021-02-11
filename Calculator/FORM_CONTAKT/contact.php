@@ -1,10 +1,11 @@
 <?php
     if ((!empty($_POST)) && ($_POST["name"] != "") && ($_POST["text"] != "")) {
         $row = "\n<----->\n" .
-            $_POST["name"] . "\n" .
+            $_POST["tel"] . "\n" .
             $_POST["email"] . "\n" .
-            $_POST["text"];
-        file_put_contents("file_guest.txt", $row, FILE_APPEND);
+            $_POST["name"];
+            $_POST["url"];
+        file_put_contents("contact.txt", $row, FILE_APPEND);
         header("Location: ?");
         die(); 
     }
@@ -15,15 +16,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Contact_fornm</title>
         <link rel="stylesheet" href="style265.css">
     </head>
 
     <body>
-            <h1>Гостевая книга</h1>
+            <h1>Форма</h1>
             <div class="text">
             <?php
-            $data =file_get_contents("file_guest.txt");
+            $data =file_get_contents("contact.txt");
             $records = explode("<----->", $data);
             echo "<table border='1'>";
             foreach ($records as $record) {
