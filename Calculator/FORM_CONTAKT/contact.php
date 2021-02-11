@@ -9,6 +9,47 @@
         header("Location: ?");
         die(); 
     }
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        if (empty($_POST["tel"])) {
+            $nameErr = "Name is required";
+        } else {
+            $name = test_input($_POST["tel"]);
+            if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+                $nameErr = "Only letters and white space allowed";
+                unset($name);
+            }  
+        }
+    
+        if (empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        } else {
+            $email = test_input($_POST["email"]);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+                unset($email);
+            }
+        }
+        if (empty($_POST["name"])) {
+            $nameErr = "Name is required";
+        } else {
+            $name = test_input($_POST["name"]);
+            if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+                $nameErr = "Only letters and white space allowed";
+                unset($name);
+            }  
+        }
+    
+        if (empty($_POST["website"])) {
+            $websiteErr = "Website is required";
+        } else {
+            $website = test_input($_POST["website"]);
+            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $website)) {
+                $websiteErr = "Invalid URL";
+                unset($website);
+            }
+        }
+    
       ?>
     <!DOCTYPE html>
     <html lang="en">
