@@ -1,34 +1,43 @@
 <?php
-$number1=rand (0,9);
-$number2=rand (0,9);
-$numberResult=$number1+$number2;
-$str = [
-    0 => "ноль",
-    1 => "один",
-    2 => "два",
-    3 => "три",
-    4 => "четыре",
-    5 => "пять",
-    6 => "шесть",
-    7 => "семь",
-    8 => "восемь",
-    9 => "девять",
-    10 => "десять",
-    11 => "одиннадцать",
-    12 => "двенадцать",
-    13 => "тринадцать",
-    14 => "четырнадцать",
-    15 => "пятнадцать",
-    16 => "шестнадцать",
-    17 => "семнадцать",
-    18 => "восемнадцать",
-    19 => "девятнадцать",
-    20 => "двадцать"
+$number1 = rand(0, 9);
+$number2 = rand(0, 9);
+$numbers = "$number1 $number2";
+$input = $_POST["captcha"];
 
-];
-if ($_POST==$str) {echo "Yes"}
+   echo $inputNumber=preg_replace(
+        [
+            "/ноль/",
+            "/один/",
+            "/два/",
+            "/три/",
+            "/четыре/",
+            "/пять/",
+            "/шесть/",
+            "/^семь/",
+            "/восемь/",
+            "/девять/"
+        ],
+        [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        $input
+    );
+    
+    if ($inputNumber==$numbers) {
+       echo $validate = "ok";
+    } else {
+        echo $error = "error";
+    }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,26 +49,19 @@ if ($_POST==$str) {echo "Yes"}
 </head>
 
 <body>
-   
+
     <h1>1.Скрипт капча</h1>
     <form class="meny1" method="post" action="">
-        <input type="text" name="name"><br>
-        <span><?php echo "$number1+$number2=" ?></span><br>
-        <input type="text" name="captcha" placeholder="Введите цифры прописью"><br><br>
-        <input type="submit" value="Отправить"><br>
+        <span><?php echo "$numbers" ?></span><br>
+        <input type="text" name="captcha"><br><br>
+        <input type="submit" value="Отправить"><br><br>
+      
     </form>
-<!-- 
+    <?php
     
-    <h1>Задача 2.Текстовый калькулятор.</h1>
-    <form class="meny1" method="post">
-        <p> Введите слагаемые от 1 до 10 прописью</p>
-        <p><textarea cols="20px" rows="2px" name="slag1"></textarea></p>
-        <p><textarea cols="20px" rows="2px" name="slag2"></textarea></p>
-        <input type="submit" value="Отправить">
-    </form><br> -->
     
-
-
+    ?>
+    
 </body>
 
 </html>
