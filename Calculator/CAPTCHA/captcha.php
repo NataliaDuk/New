@@ -1,21 +1,21 @@
 <?php
 $number1 = rand(0, 9);
 $number2 = rand(0, 9);
-$numbers = "$number1 $number2";
+$numbers = "$number1$number2";
 $input = $_POST["captcha"];
 
    echo $inputNumber=preg_replace(
         [
-            "/ноль/",
-            "/один/",
-            "/два/",
-            "/три/",
-            "/четыре/",
-            "/пять/",
-            "/шесть/",
-            "/^семь/",
-            "/восемь/",
-            "/девять/"
+            "/\bноль([ ]?+)/iu",
+            "/\bодин([ ]?+)/iu",
+            "/\bдва([ ]?+)/iu",
+            "/\bтри([ ]?+)/iu",
+            "/\bчетыре([ ]?+)/iu",
+            "/\bпять([ ]?+)/iu",
+            "/\bшесть([ ]?+)/iu",
+            "/\bсемь([ ]?+)/iu",
+            "/\bвосемь([ ]?+)/iu",
+            "/\bдевять([ ]?+)/iu"
         ],
         [
             0,
@@ -32,10 +32,10 @@ $input = $_POST["captcha"];
         $input
     );
     
-    if ($inputNumber==$numbers) {
-       echo $validate = "ok";
+    if ("$inputNumber"=="$numbers") {
+       echo "ok";
     } else {
-        echo $error = "error";
+        echo "error";
     }
 ?>
 <!DOCTYPE html>
