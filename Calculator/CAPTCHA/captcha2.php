@@ -1,16 +1,4 @@
 <?php
-session_start();//Начинаем сессию
-$number1 = rand(0, 9);//Генерируем случайное  число 
-$number2 = rand(0, 9);
-$_SESSION['captcha']="$number1$number2";//записываем числа в сессию
-$image=imagecreatetruecolor(200,60);//Создаем изображение
-$color=imagecolorallocate($image,200,100,90);//Задаем 1-й цвет
-$white=imagecolorallocate($image.255.255.255);//Задаем 2-й цвет
-imagefilledrectangle($image,0,0,399,99,$white); //Прямоугольник с белым фоном
-imagettftext($image,00,10,40,color,"Arial Regular.ttf", "$number1$number2");//Пишем текст
-header("Content-type: image/png"); //отсылаем заголовок, что изображение png
-imagepng($image);//Выводим изображение
-
    echo $inputNumber=preg_replace(
         [
             "/\bноль/iu",
@@ -41,14 +29,11 @@ imagepng($image);//Выводим изображение
     echo $inputNumber2=preg_replace('/[ ]/', '', $inputNumber);
    
     session_start();
-    $_SESSION['captcha1']= $numbers;
-    $_POST["captcha"]=$inputNumber2;
-    echo $_SESSION['captcha1'];
-    
-        if ($_POST["captcha"]==$_SESSION['captcha1']) {
-       echo "ok";
+    $inputNumber2=$_POST["captcha"];//ответ пользователя
+        if ($inputNumber2==$_SESSION['captcha1']&&($captcha !="")) {
+       echo "Капча введена правильно";
     } else {
-        echo "error";
+        echo "Капча введена не правильно";
     }
 ?>
 <!DOCTYPE html>
@@ -63,17 +48,15 @@ imagepng($image);//Выводим изображение
 
 <body>
 
-    <h1>1.Скрипт капча</h1>
+   
     <form class="meny1" method="post" action="">
-        <span><?php echo "$numbers" ?></span><br>
+    <h1>1.Введите код с картинки</h1>
+        <img src="captchaimg.php" alt="" />
         <input type="text" name="captcha"><br><br>
-        <input type="submit" value="Отправить"><br><br>
+        <input type="submit" value="Регистрация"><br><br>
       
     </form>
-    <?php
     
-    
-    ?>
     
 </body>
 
