@@ -1,54 +1,47 @@
 <?php
-session_start();
-$number1 = rand(0, 9);
+session_start();//Начинаем сессию
+$number1 = rand(0, 9);//Генерируем случайное  число 
 $number2 = rand(0, 9);
-$numbers="$number1$number2";
-$_SESSION['captcha1']= $numbers;
+$_SESSION['captcha']="$number1$number2";//записываем числа в сессию
+$image=imagecreatetruecolor(200,60);//Создаем изображение
+$color=imagecolorallocate($image,200,100,90);//Задаем 1-й цвет
+$white=imagecolorallocate($image.255.255.255);//Задаем 2-й цвет
+imagefilledrectangle($image,0,0,399,99,$white); //Прямоугольник с белым фоном
+imagettftext($image,00,10,40,color,"Arial Regular.ttf", "$number1$number2");//Пишем текст
+header("Content-type: image/png"); //отсылаем заголовок, что изображение png
+imagepng($image);//Выводим изображение
 
-$numbers2 = [
-    "один" => 1,
-    "два" => 2,
-    "три" => 3,
-    "четыре" => 4,
-    "пять" => 5,
-    "шесть" => 6,
-    "семь" => 7,
-    "восемь" => 8,
-    "девять" => 9,
-    "десять" => 10
-
-];
-
-//    echo $inputNumber=preg_replace(
-//         [
-//             "/\bноль/iu",
-//             "/\bодин/iu",
-//             "/\bдва/iu",
-//             "/\bтри/iu",
-//             "/\bчетыре/iu",
-//             "/\bпять/iu",
-//             "/\bшесть/iu",
-//             "/\bсемь/iu",
-//             "/\bвосемь/iu",
-//             "/\bдевять/iu"
-//         ],
-//         [
-//             "0",
-//             "1",
-//             "2",
-//             "3",
-//             "4",
-//             "5",
-//             "6",
-//             "7",
-//             "8",
-//             "9"
-//         ],
-//         $_POST["captcha"]
-//     );
-    echo $inputNumber2=preg_replace('/[ ]/', '', $numbers2);
+   echo $inputNumber=preg_replace(
+        [
+            "/\bноль/iu",
+            "/\bодин/iu",
+            "/\bдва/iu",
+            "/\bтри/iu",
+            "/\bчетыре/iu",
+            "/\bпять/iu",
+            "/\bшесть/iu",
+            "/\bсемь/iu",
+            "/\bвосемь/iu",
+            "/\bдевять/iu"
+        ],
+        [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        $_POST["captcha"]
+    );
+    echo $inputNumber2=preg_replace('/[ ]/', '', $inputNumber);
    
     session_start();
+    $_SESSION['captcha1']= $numbers;
     $_POST["captcha"]=$inputNumber2;
     echo $_SESSION['captcha1'];
     
