@@ -4,50 +4,37 @@
 // include "function.php";
 if (empty($_POST["tel"])) {
     $errorTel = "Не введен номер телефона";
-} else {
-    $tel = $_POST["tel"];
-    if (!preg_match("/^\+\d[\d\(\)\-]{9,14}\d$/iu", $tel)) {
-        $errorTel = "Не корректно введен номер";
-        // $ok = false;
-    }
-}
+} elseif 
+    ($tel=preg_match("/^\+\d[\d\(\)\-]{9,14}\d$/iu", $_POST["tel"])) {$tel=true;} else { $errorTel = "Не корректно введен номер";}
+    
+
 
 if (empty($_POST["email"])) {
     $errorMail = "Не введен Email";
-} else {
-    $email = $_POST["email"];
-    if (!preg_match("/^.+@.+\..+$/iu", $email)) {
-        $errorMail = "Не верный формат email";
+} elseif ($email=preg_match("/^.+@.+\..+$/iu",$_POST["email"])) {$email=true;} else {
+        $errorMail = "Не верный формат email";}
         // $ok = false;
-    }
-}
+    
 if (empty($_POST["name"])) {
     $errorName = "Не введено имя";
-} else {
-    $name = $_POST["name"];
-    if (!preg_match("/^[а-яa-zA-ZА-Я ]*$/iu", $name)) {
-        $errorName = "Не корректно введено имя";
+} elseif ($name = preg_match("/^[а-яa-zA-ZА-Я ]*$/iu", $_POST["name"])) {$name=true;} else {
+        $errorName = "Не корректно введено имя";}
         // $ok = false;
-    }
-}
+    
 
 if (empty($_POST["url"])) {
     $errorURL = "Не введен адрес соцсети";
-} else {
-    $url = $_POST["url"];
-    if (!preg_match("/\bhttps:\/\/vk\.com\/|www\.facebook\.com\/|www\.instagram\.com\/|twitter\.com\//", $url)) {
-        $errorURL = "Не корректно введен адрес";
+} elseif  ($url=preg_match("/\bhttps:\/\/vk\.com\/|www\.facebook\.com\/|www\.instagram\.com\/|twitter\.com\//", $_POST["url"])) {$url=true;} else {
+        $errorURL = "Не корректно введен адрес";}
         // $ok = false;
-    }
-}
-
+    
 // if ($errorURL || $errorName || $errorMail || $errorTel) {
 //     $registr = "Вы не зарегистрированы";
 // } 
 // else {$registr = "Вы зарегистрированы";}
 
-if (!empty($name) & !empty($email) & !empty($tel) & !empty($url))  
-    {
+if ($name && $email && $tel && $url)  
+    { echo $registr = "Вы зарегистрированы";
     $row = "\n<----->\n" .
         $name . "\n" .
         $tel . "\n" .
@@ -57,7 +44,7 @@ if (!empty($name) & !empty($email) & !empty($tel) & !empty($url))
     header("Location: ?");
     die(); 
     
-}
+} else    {  $registr = "Вы не зарегистрированы";}
 
     // $row = "\n<----->\n" . $name . "\n" . $tel . "\n" . $email .
     // "\n" . $url;
