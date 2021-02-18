@@ -1,21 +1,22 @@
 <?php
-
-if ($ok) {
-    $row = "\n<----->\n" . $name . "\n" . $tel . "\n" . $email .
-        "\n" . $url;
-    $registr = "Вы зарегистрированы";
-    file_put_contents("contact.txt", $row, FILE_APPEND);
-    header("Location: ?");
-    die();
-}
-$ok = true;
+// if ((!empty($_POST)) && ($_POST["tel"] != "") && ($_POST["name"] != "") && ($_POST["email"] != "") && ($_POST["url"] != "") ) {
+//     $row = "\n<----->\n" .
+//         $_POST["name"] . "\n" .
+//         $_POST["email"] . "\n" .
+//         $_POST["url"]. "\n" .
+//         $_POST["tel"];
+//     file_put_contents("contact.txt", $row, FILE_APPEND);
+//     header("Location: ?");
+//     die(); 
+// }
+// $ok = true;
 if (empty($_POST["tel"])) {
     $errorTel = "Не введен номер телефона";
 } else {
     $tel = $_POST["tel"];
     if (!preg_match("/^\+\d[\d\(\)\-]{9,14}\d$/iu", $tel)) {
         $errorTel = "Не корректно введен номер";
-        $ok = false;
+        // $ok = false;
     }
 }
 
@@ -25,7 +26,7 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
     if (!preg_match("/^.+@.+\..+$/iu", $email)) {
         $errorMail = "Не верный формат email";
-        $ok = false;
+        // $ok = false;
     }
 }
 if (empty($_POST["name"])) {
@@ -34,7 +35,7 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
     if (!preg_match("/^[а-яa-zA-ZА-Я ]*$/iu", $name)) {
         $errorName = "Не корректно введено имя";
-        $ok = false;
+        // $ok = false;
     }
 }
 
@@ -44,14 +45,22 @@ if (empty($_POST["url"])) {
     $url = $_POST["url"];
     if (!preg_match("/\bhttps:\/\/vk\.com\/|www\.facebook\.com\/|www\.instagram\.com\/|twitter\.com\//", $url)) {
         $errorURL = "Не корректно введен адрес";
-        $ok = false;
+        // $ok = false;
     }
 }
-if ($errorURL && $errorName && $errorMail && $errorTel) {
-    $registr = "Вы не зарегистрированы";
-} else {
-    $registr = "Вы зарегистрированы";
-}
+
+// if ($errorURL || $errorName || $errorMail || $errorTel) {
+//     $registr = "Вы не зарегистрированы";
+// } else {
+    
+//     $row = "\n<----->\n" . $name . "\n" . $tel . "\n" . $email .
+//     "\n" . $url;
+//     fputs($file,$)
+//     // file_put_contents("contact.txt", $row, FILE_APPEND);
+//     // header("Location: ?");
+//     // die();
+//     $registr = "Вы зарегистрированы";
+// }
 
 ?>
 <!DOCTYPE html>
@@ -70,10 +79,11 @@ if ($errorURL && $errorName && $errorMail && $errorTel) {
         <?php
         $data = file_get_contents("contact.txt");
         $records = explode("<----->", $data);
+        include "function.php";
         ?>
     </div>
     <div class="ident">
-        <form action="" method="POST">
+        <form action="?" method="POST">
             <h2>Введите Ваше имя</h2>
             <input type="text" name="name" class="user">
             <span class="textError"> <?= $errorName ?></span>
