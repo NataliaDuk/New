@@ -1,5 +1,5 @@
 body {
-    background-image: url(defensoria-publica_shutterstock.jpg);
+    background-image: url(pkpm.jpg);
     background-size: 100%;    
 }
   
@@ -7,8 +7,8 @@ h1 {
    text-align: center;
     text-shadow: 3px 1px 3px black;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 30pt;
-    color:blue;
+    font-size: 40pt;
+    color:rgba(153, 0, 255, 0.726);
     
 }
 h2 {
@@ -54,6 +54,6 @@ h2 {
 
 
 .textError  {
-    font: 10pt Arial, Helvetica, sans-serif;
+    font: bold italic 15pt Arial, Helvetica, sans-serif;
     color: red;
 }

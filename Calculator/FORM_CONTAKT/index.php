@@ -1,44 +1,43 @@
 <?php
-
-// $ok = true;
-// include "function.php";
 if (empty($_POST["tel"])) {
     $errorTel = "Не введен номер телефона";
-} elseif 
-    ($tel=preg_match("/^\+\d[\d\(\)\-]{9,14}\d$/iu", $_POST["tel"])) {} else { $errorTel = "Не корректно введен номер";}
-    
-
-
+} elseif ($errorTel = !preg_match("/^\+\d[\d\(\)\-]{9,14}\d$/iu", $_POST["tel"])) {
+    $errorTel = "Не корректно введен номер";
+} else {
+    $tel = $_POST['tel'];
+}
 if (empty($_POST["email"])) {
     $errorMail = "Не введен Email";
-} elseif ($email=preg_match("/^.+@.+\..+$/iu",$_POST["email"])) {} else {
-        $errorMail = "Не верный формат email";}
-        // $ok = false;
-    
+} elseif ($errorMail = !preg_match("/^.+@.+\..+$/iu", $_POST["email"])) {
+    $errorMail = "Не верный формат email";
+} else {
+    $email  = $_POST["email"];
+}
 if (empty($_POST["name"])) {
     $errorName = "Не введено имя";
-} elseif ($name = preg_match("/^[а-яa-zA-ZА-Я ]*$/iu", $_POST["name"])) {} else {
-        $errorName = "Не корректно введено имя";}
-        // $ok = false;
-    
-
+} elseif ($errorName = !preg_match("/^[а-яa-zA-ZА-Я ]*$/iu", $_POST["name"])) {
+    $errorName = "Не корректно введено имя";
+} else {
+    $name = $_POST["name"];
+}
 if (empty($_POST["url"])) {
     $errorURL = "Не введен адрес соцсети";
-} elseif  ($url=preg_match("/\bhttps:\/\/vk\.com\/|www\.facebook\.com\/|www\.instagram\.com\/|twitter\.com\//", $_POST["url"])) {} else {
-        $errorURL = "Не корректно введен адрес";}
-        // $ok = false;
-
-
-if ($name && $email && $tel && $url)  
-    { $registr = "Вы зарегистрированы";
+} elseif ($errorURL = !preg_match("/\bhttps:\/\/vk\.com\/|www\.facebook\.com\/|www\.instagram\.com\/|twitter\.com\//", $_POST["url"])) {
+    $errorURL = "Не корректно введен адрес";
+} else {
+    $url = $_POST["url"];
+}
+if ($name && $email && $tel && $url) {
+    $registr = "Вы зарегистрированы";
     $row = "\n<----->\n" .
         $name . "\n" .
         $tel . "\n" .
-        $email. "\n" .
+        $email . "\n" .
         $url;
     file_put_contents("contact.txt", $row, FILE_APPEND);
-    
-} else    {  $registr = "Вы не зарегистрированы";}
+} else {
+    $registr = "Вы не зарегистрированы";
+}
 
 ?>
 <!DOCTYPE html>
@@ -57,7 +56,6 @@ if ($name && $email && $tel && $url)
         <?php
         $data = file_get_contents("contact.txt");
         $records = explode("<----->", $data);
-       
         ?>
     </div>
     <div class="ident">
