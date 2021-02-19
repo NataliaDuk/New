@@ -16,11 +16,20 @@
 	<input type="submit" value="Отправить">
 </form>
 <?php
-$file="upload/".$_FILES['userfile[]']['name'];
-move_uploaded_file($_FILES['userfile[]']['tmp_name'], $file);
-if (isset($_FILES['userfile[]']['name'])) {
-
+print_r($_FILES);
+$file="upload/".$_FILES['userfile']['name'];
+move_uploaded_file($_FILES['userfile']['tmp_name'], $file);
+if (isset($_FILES['userfile']['name'])) { $p='/\.jpg|\.doc|/.xls|/.pdf|/.(a-z)/'u;
+    $type=preg_match($p, $_FILES['userfile']['name'], $matches); 
+$imagefile=[
+    
+]
 }
+
+    // foreach ($_FILES['userfile[]']['name'] as $key => $value) {
+    // }
+
+
 ?>
 </body>
 </html>
