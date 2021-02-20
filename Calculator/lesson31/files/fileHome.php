@@ -16,6 +16,7 @@
 	<input type="submit" value="Отправить">
 </form>
 <?php
+
 print_r($_FILES);
 $file="upload/".$_FILES['userfile']['name'];
 move_uploaded_file($_FILES['userfile']['tmp_name'], $file);

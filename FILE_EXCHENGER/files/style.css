@@ -1,0 +1,66 @@
+body {
+    background-image: url(question-mark.jpg);
+    background-size: 100%;    
+}
+  
+h1 {
+    text-align: center;
+    text-shadow: 3px 1px 3px black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35pt;
+    color: rgb(11, 179, 11);
+}
+
+h2 {
+    margin-left: 5%; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color:darkviolet
+    
+}
+.meny {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 50px;
+    width: 1200px;
+    height: 700px;
+    background: whitesmoke;
+    border-color: #e3e3e3;
+    border-width: 20px;
+    border-style: groove;
+     
+}
+.button {
+  margin-left: 30%;
+  font-weight: 700;
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  padding: 1em 1em;
+  border-radius: 15px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+.button:hover { 
+    background: rgb(53, 167, 110); 
+}
+.button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+.start2 img {
+    width: 350px;
+    height: 300px;
+    margin: 10px 800px;
+    border-radius: 50%;
+    
+}
+div {
+    float: left;
+}
+.graph {
+    background: red none repeat scroll 0 0;
+    height: 40px;
+}
+    

@@ -1,0 +1,25 @@
+body {
+    background-image: url(fon.jpg);
+    background-size: 100%;    
+}
+  
+.number {
+   /* text-align: center; */
+   letter-spacing: 10pt;
+    text-shadow: 3px 3px 5px black;
+    font: bold 50pt Arial, Helvetica, sans-serif;
+    color:#00FF00;
+    
+}
+
+.form {
+    text-align: center;
+    height: 400;
+    width: 400;
+    background-color: rgb(245, 233, 233)	;
+    padding: 50px ;
+    margin: 200px 600px 800px 600px;
+    font: bold 15pt Arial, Helvetica, sans-serif;
+   
+}
+
