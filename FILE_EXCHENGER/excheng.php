@@ -1,9 +1,9 @@
 <?php
 $dir = array_diff(scandir("files\\"), ['..', '.']);
-rsort($dir);
+echo "<h1>Список загруженных файлов:</h1>";
 foreach ($dir as $value) {
     preg_match_all('/^.*\.(.*?)$/iu', $value, $matchs);
-    $ext = in_array($matchs[1][0], ['docx', 'jpg', 'pdf', 'xls', 'php', 'html','txt', ]) ? $matchs[1][0] : 'default';
-    echo "<a href='files\\$value'>$value</a>" . "<img height='30px' weight='50px' src='ikons/$ext.png'><br>\n"; 
+    $ext = in_array($matchs[1][0], ['docx', 'jpg', 'pdf', 'xls', 'php', 'html','txt']) ? $matchs[1][0] : 'default';
+    echo "<img height='60px' weight='80px' src='ikons/$ext.png'>" . "<a href='files\\$value'>$value</a> <br>\n"; 
 }
 ?>
