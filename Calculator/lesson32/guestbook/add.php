@@ -9,7 +9,7 @@ $time=date("d". $months[date('n')]. "Y(".$week[date('w')].")");
 $_POST["time"]= $time;
 
 $data[] = ["msg" => $_POST["msg"], "name" => $_POST["name"], "time" => $_POST["time"]];
-file_put_contents("data.json", json_encode($data));
+file_put_contents("data.json", json_encode($data, JSON_UNESCAPED_UNICODE));
 
 header("Location: main.php");
 
