@@ -26,7 +26,7 @@
     }
     ?>
           <div class="col-sm">
-          <form action="add.php" method="post"> 
+          <form action="add.php" method="post">
         
         <div class="form-floating">
             <textarea name="msg" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
