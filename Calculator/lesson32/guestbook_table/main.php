@@ -15,20 +15,23 @@
 <div class="container">
         <div class="row">
           <div class="col-sm">
-            
           </div>
-
-    <?php
+          <div class="col-6">
+         <table class="table table-bordered border-primary">
+        <tr class='table-primary'><th class='w-25 p-3'>Дата</th><th>Комментарий</th><th class='w-25 p-3'>Имя</th></tr>
+          <?php
+          
     include "function.php";
     foreach (loadMessages() as $row) {
-        echo "<p>".  dateFormat($row["date_time"])  ."<br>". smile($row["msg"]) . "<br>" . $row["name"] .
-       "<br></p>";
+        echo "<tr><td class='table-secondary'>".  dateFormat($row["date_time"])  ."</td><td>". smile($row["msg"]) . "</td><td>" . $row["name"] .
+  "</td></tr>";
     }
+    
     ?>
-          <div class="col-sm">
+  </table>
+</table>
           <form action="add.php" method="post">
-        
-        <div class="form-floating">
+     <div class="form-floating">
             <textarea name="msg" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">Коментарий</label>
         </div>
