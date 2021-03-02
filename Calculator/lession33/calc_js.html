@@ -10,7 +10,10 @@
 </head>
 
 <body>
-<input type="text" value="0" id="text">
+<form action="calc.php" method="post">
+<input type="text" value="0" id="text" name="calc">
+    <input type="submit" value="Считать">
+</form>
 <button onclick="f()">OK</button>
 <button onclick="insert(1)">1</button>
 <button onclick="insert(2)">2</button>
@@ -22,6 +25,11 @@
 <button onclick="insert(8)">8</button>
 <button onclick="insert(9)">9</button>
 <button onclick="insert(0)">0</button>
+<button onclick="insert('+')">+</button>
+<button onclick="insert('-')">-</button>
+<button onclick="insert('/')">/</button>
+<button onclick="insert('*')">*</button>
+
 <script>
     function f() {
         document.getElementById("text").value = ""
