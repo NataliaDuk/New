@@ -27,6 +27,7 @@ echo match ($operation) {
     "-" => $a - $b,
     "*" => $a * $b,
     "/" => $a / $b,
+    "pow"=> pow($a,$b),
     default => "Unknown operation"
 };
 
