@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="054f0333-58ce-4bf6-8b01-6fc61a6a7278" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/90321.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/.idea/vcs.xml" afterDir="false" />
@@ -50,6 +51,11 @@
       <change beforePath="$PROJECT_DIR$/PHP/var6.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var6.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/var7.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var7.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/var8.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var8.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/MSQL/moloko.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MSQL/two_home.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +83,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MSQL" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\OpenServer5.3.8\domains\localhost\New" />
       <recent name="C:\OpenServer5.3.8\domains\localhost\New\Calculator" />
     </key>
@@ -106,6 +117,11 @@
       </list>
     </recent_temporary>
   </component>
+=======
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New\MSQL" />
+    </key>
+  </component>
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -116,9 +132,13 @@
       <updated>1612596288592</updated>
       <workItem from="1612596290807" duration="43000" />
       <workItem from="1614701240255" duration="179000" />
+<<<<<<< HEAD
       <workItem from="1614958023937" duration="1454000" />
       <workItem from="1615100667556" duration="18020000" />
       <workItem from="1615303915539" duration="8823000" />
+=======
+      <workItem from="1615390157013" duration="5138000" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     </task>
     <servers />
   </component>
@@ -135,6 +155,9 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
   </component>
 </project>

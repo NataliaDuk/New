@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6316ca14-950b-4584-abe3-efd2f893d749" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="6c22ea31-fc05-4c27-bb45-6eb1994024c4" name="Default Changelist" comment="" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -22,6 +27,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1pCya6ybH73A3qJZiGJTxykojB5" />
+=======
+  <component name="ProjectId" id="1pIkr5dx7UIKqSdU5LdsYSz4GxT" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -39,11 +48,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../OpenServer5.3.8/domains/localhost/New/Calculator" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="6316ca14-950b-4584-abe3-efd2f893d749" name="Default Changelist" comment="" />
       <created>1614701428019</created>
       <option name="number" value="Default" />
@@ -51,6 +64,14 @@
       <updated>1614701428019</updated>
       <workItem from="1614701429179" duration="62000" />
       <workItem from="1614707435770" duration="2543000" />
+=======
+      <changelist id="6c22ea31-fc05-4c27-bb45-6eb1994024c4" name="Default Changelist" comment="" />
+      <created>1614878188507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614878188507</updated>
+      <workItem from="1614878190035" duration="31000" />
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
     </task>
     <servers />
   </component>
@@ -67,6 +88,9 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> 6619aa2fd23cda26924e35d7ea9b518f27323020
   </component>
 </project>
