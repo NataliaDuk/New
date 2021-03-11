@@ -11,10 +11,10 @@
 
 <body>
 <form action="calc.php" method="post">
-<input type="text" value="0" id="text" name="calc">
+    <input value="0" type="text" id="text" name="calc">
     <input type="submit" value="Считать">
 </form>
-<button onclick="f()">OK</button>
+<button onclick="f()">Oчистить</button>
 <button onclick="insert(1)">1</button>
 <button onclick="insert(2)">2</button>
 <button onclick="insert(3)">3</button>
@@ -27,8 +27,10 @@
 <button onclick="insert(0)">0</button>
 <button onclick="insert('+')">+</button>
 <button onclick="insert('-')">-</button>
-<button onclick="insert('/')">/</button>
 <button onclick="insert('*')">*</button>
+<button onclick="insert('/')">/</button>
+
+<button onclick="insert('pow')">X<sup>y</sup></button>
 
 <script>
     function f() {

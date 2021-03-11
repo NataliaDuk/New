@@ -1,0 +1,24 @@
+body {
+    background-image: url("329755_6014.jpg");
+    background-size: 100%;
+}
+.btn-lg {
+    margin: 10px 10px 10px 25px;
+    height: 70px;
+    width: 100px;
+    display: block;
+    float: left;
+    text-align: center;
+
+}
+
+.col-6 {
+
+    margin-top: 100px!important;
+    font: bolder 12pt "Arial Black";
+    text-align: center;
+    color: blue;
+    border: 2pt blue double;
+    height: 550px;
+
+}

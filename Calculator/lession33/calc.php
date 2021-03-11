@@ -1,8 +1,8 @@
 <?php
-echo $_POST('calc');
-preg_match("/(/d)(\+|-|\*|\/)(/d)/iu", $_POST(calc), $matches);
-$a=$mathes[1];
-$b=$mathes[3];
+//echo $_POST("calc");
+preg_match("/(\d)(\+|-|\*|\/|pow)(\d)/iu", $_POST["calc"], $matches);
+$a = $matches[1];
+$b = $matches[3];
 $operation=$matches[2];
 //switch ($operation) {
 //    case "+";
@@ -19,7 +19,7 @@ $operation=$matches[2];
 //        $result=$a/$b;
 //        break;
 //default:
-//    $result="Неизвестная операция"ж
+//    $result="Неизвестная операция";
 //}
 //echo $result;
 echo match ($operation) {
@@ -27,6 +27,7 @@ echo match ($operation) {
     "-" => $a - $b,
     "*" => $a * $b,
     "/" => $a / $b,
+    "pow"=> pow($a,$b),
     default => "Unknown operation"
 };
 

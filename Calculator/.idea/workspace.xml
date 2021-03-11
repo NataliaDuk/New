@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87295e86-2a89-4ca7-9f24-0021705ecde4" name="Default Changelist" comment="" />
+    <list default="true" id="87295e86-2a89-4ca7-9f24-0021705ecde4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/calc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/calc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/calc_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR_pow/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lession33/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lession33/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lession33/calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lession33/calc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lession33/calc_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lession33/calc_js.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +45,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New\Calculator" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +60,11 @@
       <updated>1614501574296</updated>
       <workItem from="1614501575807" duration="387000" />
       <workItem from="1614701500794" duration="2843000" />
+      <workItem from="1614875090600" duration="1732000" />
+      <workItem from="1614876879988" duration="346000" />
+      <workItem from="1614877634470" duration="546000" />
+      <workItem from="1614878224432" duration="8099000" />
+      <workItem from="1614955222176" duration="75000" />
     </task>
     <servers />
   </component>

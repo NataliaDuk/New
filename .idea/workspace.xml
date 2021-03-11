@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="054f0333-58ce-4bf6-8b01-6fc61a6a7278" name="Default Changelist" comment="" />
+    <list default="true" id="054f0333-58ce-4bf6-8b01-6fc61a6a7278" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/90321.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/calc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/calc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/calc_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow_home/329755_6014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow_home/calc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow_home/calc_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calculator/CALCULATOR_pow_home/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_home.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator/lession33/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/lession33/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator/lession33/calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/lession33/calc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator/lession33/calc_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/lession33/calc_js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg10.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg10.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg11.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg12.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg13 home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg13 home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg14 home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg14 home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg15home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg15home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg16home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg16home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg1_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg1_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg2_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg2_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg3_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg3_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg4.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg5.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg6.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg7.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg8.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/alg9.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/alg9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/index1.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/index1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/index3.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/index3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/index4.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/index4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var2.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var3.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var4.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var5.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var6.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var7.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/var8.php" beforeDir="false" afterPath="$PROJECT_DIR$/MSQL/PHP/var8.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +62,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="300" />
+    </hideBySeverity>
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="1o69grfLH7AZo0LVRt3HfKpxftu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,7 +78,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New" />
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New\Calculator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New\MSQL" />
+      <recent name="C:\OpenServer5.3.8\domains\localhost\New\Calculator\125" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="calc.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Calculator/CALCULATOR_pow/calc.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.calc.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -35,10 +116,25 @@
       <updated>1612596288592</updated>
       <workItem from="1612596290807" duration="43000" />
       <workItem from="1614701240255" duration="179000" />
+      <workItem from="1614958023937" duration="1454000" />
+      <workItem from="1615100667556" duration="18020000" />
+      <workItem from="1615303915539" duration="8823000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
