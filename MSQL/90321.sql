@@ -70,4 +70,12 @@ FROM `vedomost`
 SELECT SUM(`zp`) AS "ИТОГО", MIN(`zp`) AS "Минимальная ЗП", MAX(`zp`) AS "Максимальная ЗП", AVG(`zp`) AS "Средняя ЗП", COUNT(*) AS "Количество ЗП"
 FROM `vedomost`
 
+SELECT *
+FROM `customers`
+WHERE `CNAME` LIKE "%s"
+найти клиентов с рейтингом от 150 до 250
+SELECT * FROM `customers` WHERE `CNUM` IN (2002, 2006, 2008)
+-- найти клиентов из Берлина, Лондона и Рима
+SELECT * FROM `customers` WHERE `CITY` IN ("Berlin", "London", "Rome")
+
 
