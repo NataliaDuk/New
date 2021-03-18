@@ -90,3 +90,10 @@ FROM `customers`
 WHERE `RATING`=(SELECT MAX(`RATING`) FROM customers)
 -- найти продавца, который обслуживает самый большой заказ
 SELECT `SNAME` FROM `salespeople` WHERE `SNUM`=(SELECT `SNUM` FROM orders WHERE `AMT` =(SELECT MAX(`AMT`) FROM orders))
+
+SELECT
+    *
+FROM
+    `customers`
+WHERE
+        `CITY` IN("Berlin", "Rome")
