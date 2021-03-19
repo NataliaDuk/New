@@ -15,12 +15,12 @@ SELECT
 FROM
     `orders`
 WHERE
-    `CNUM` =(
+    `CNUM` IN (
     SELECT
         `CNUM`
     FROM
         `customers`
     WHERE
         
-            `CITY` IN("Rome")
+            `CITY` IN("Rome", "Berlin")
     )
