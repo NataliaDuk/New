@@ -28,6 +28,16 @@ FROM
     `customers`,
     `orders`
 WHERE
-        `customers` = `CNUM` AND `orders` = `CNUM` AND AVG(`AMT`)=(SELECT AVG(`AMT`) FROM `orders` WHERE `ODATE`='1990-10-03')
-GROUP BY `CITY`
-HAVING SUM(`AMT`)>AVG(`AMT`)
+    `customers`.`CNUM` AND `orders`.`CNUM` AND `CITY`=(
+    SELECT
+        AVG(`AMT`)
+    FROM
+        `orders`
+    WHERE
+            `ODATE` = '1990-10-03'
+    GROUP BY `CITY`
+)
+GROUP BY
+    `CITY`
+HAVING
+        SUM(`AMT`) > AVG(`AMT`)
