@@ -22,22 +22,79 @@ FROM `customers`
 GROUP BY `CITY`
 HAVING COUNT(`CNAME`)>2
 -- найти города, сумма заказов из которых больше,чем средняя сумма заказов за 10/03/1990
+0
 SELECT
     `CITY`
+    AVG(`AMT`) AS "2"
 FROM
     `customers`,
     `orders`
 WHERE
-    `customers`.`CNUM` AND `orders`.`CNUM` AND `CITY`=(
+    `customers`.`CNUM` = `orders`.`CNUM` AND `CITY`=(
     SELECT
         AVG(`AMT`)
     FROM
         `orders`
     WHERE
-            `ODATE` = '1990-10-03'
-    GROUP BY `CITY`
+            `ODATE` = '1990-03-10'
+)
+
+HAVING
+        SUM(`AMT`) > AVG(`AMT`)
+
+1
+SELECT
+    `customers`.`CITY`,
+    SUM(`AMT`)
+FROM
+    `orders`,
+    `customers`
+WHERE
+    `customers`.`CNUM` AND `orders`.`CNUM` AND `CNUM`
+GROUP BY
+    `CITY`
+2
+SELECT
+    AVG(`AMT`)
+FROM
+    `orders`
+
+WHERE
+        `ODATE` = '1990-03-10'
+3
+SELECT
+    `customers`.`CITY`,
+    SUM(`AMT`),
+    AVG(`AMT`)
+FROM
+    `customers`,
+    `orders`
+WHERE
+    `customers`.`CNUM` AND `orders`.`CNUM` AND `CITY` =(
+    SELECT
+        AVG(`AMT`)
+    FROM
+        `orders`
+    WHERE
+            `ODATE` = '1990-03-10'
 )
 GROUP BY
     `CITY`
-HAVING
-        SUM(`AMT`) > AVG(`AMT`)
+
+SSELECT
+    `customers`.`CITY`,
+     SUM(`orders`.`AMT`) AS '2'
+FROM
+    `customers`,
+    `orders`
+WHERE
+    `customers`.`CNUM` = `orders`.`CNUM` AND '2' >(
+    SELECT
+    AVG(`AMT`)
+    FROM
+    `orders`
+    WHERE
+    `ODATE` = '1990-03-10'
+    )
+GROUP BY
+    `customers`.`CITY`
