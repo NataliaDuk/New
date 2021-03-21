@@ -196,3 +196,17 @@ WHERE
     FROM
         `customers`
 )
+-- подсчитать количество продавцов, которые работали с клиентами с самым низким рейтингом
+SELECT
+    COUNT(`SNAME`) AS "Количество продавцов"
+FROM
+    `salespeople`,
+    `customers`,
+    `orders`
+WHERE
+        `orders`.`CNUM` = `customers`.`CNUM` AND `orders`.`SNUM` = `salespeople`.`SNUM` AND `RATING` =(
+    SELECT
+        MIN(`RATING`)
+    FROM
+        `customers`
+)
