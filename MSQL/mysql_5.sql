@@ -1,7 +1,11 @@
 -- найти продавцов, которые обслуживали заказ 10/06/1990
-SELECT `SNAME`
-FROM `salespeople`, `orders`
-WHERE `salespeople`.`SNUM`=`orders`.`SNUM` AND `orders`.`ODATE`="1990-06-10"
+SELECT
+    `SNAME`
+FROM
+    `salespeople`,
+    `orders`
+WHERE
+        `salespeople`.`SNUM` = `orders`.`SNUM` AND `orders`.`ODATE` = "1990-06-10"
 -- подсчитать количество продавцов, которые работали с клиентами с самым низким рейтингом
 SELECT
     COUNT(DISTINCT `SNAME`) AS "Количество продавцов"
@@ -17,10 +21,14 @@ WHERE
         `customers`
 )
 -- найти города, в которых больше двух клиентов
-SELECT `CITY`
-FROM `customers`
-GROUP BY `CITY`
-HAVING COUNT(`CNAME`)>2
+SELECT
+    `CITY`
+FROM
+    `customers`
+GROUP BY
+    `CITY`
+HAVING
+        COUNT(`CNAME`) > 2
 -- найти города, сумма заказов из которых больше,чем средняя сумма заказов за 10/03/1990
 SELECT
     `customers`.`CITY`
