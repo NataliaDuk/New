@@ -59,4 +59,30 @@ FROM
     `customers`
 WHERE
         `CITY` = 'London'
--- вывести продавцов, которые выполняют наибольшие и наименьшие заказы по датам
+-- с помощью соотнесенного подзапроса увеличить на 10% комиссионные всех продавцов которые обслуживали по крайней мере двух заказчиков
+UPDATE
+    salespeople
+SET
+    `COMM` = `COMM`*1.1
+WHERE
+        2 <=(
+        SELECT
+            COUNT(`customers`.`CNUM`)
+        FROM
+            customers
+        WHERE
+                `customers`.`SNUM` = `salespeople`.`SNUM`
+    )
+-- удалить всех заказчиков у продавцов в Лондоне
+DELETE
+FROM
+    сustomers
+WHERE
+        `SNUM` = ANY(
+        SELECT
+            `SNUM`
+        FROM
+            salespeople
+        WHERE
+                `CITY` = 'London'
+    )
