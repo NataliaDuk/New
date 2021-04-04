@@ -1,4 +1,4 @@
-<?php //add.php
+<?php //add1.php
 include_once "connect.php";// подключаем файл connect для соединения с базой данных
 
 /**

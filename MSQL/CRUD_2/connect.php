@@ -1,4 +1,4 @@
-<?php
+<?php //connect.php
 // подключаем файл config,function и устанавливаем соединение с базой данных
 include_once "config.php";
 include_once "function.php";
