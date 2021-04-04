@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,24 +12,23 @@
     <title>Document</title>
 </head>
 <body>
-<form action="add1.php" method="post">
+<form action="add.php" method="post">
     <?php
-    include_once "connect.php";// подключаем файл connect для соединения с базой данных
+    include_once "connect.php";
     /**
      * @var mysqli $link соединение с базой данных
      * @var array $config конфигурационные данные из файла config
      */
-    $fields = fieldsList($link, $config["mysql"]["table"]);// вызываем функцию, чтобы получить список полей таблицы
-    //создаем цикл, который проходит по списку и для каждого элемента генерируем поле ввода
+    $fields = fieldsList($link, $config["mysql"]["table"]);
     foreach ($fields as $field) {
         ?>
         <div class="input-group mb-3">
             <input type="text" class="form-control" name="<?= $field ?>" placeholder="<?= $field ?>">
         </div>
-
         <?php
     }
     ?>
+
     <input type="submit" class="btn btn-primary" value="Добавить">
 </form>
 </body>

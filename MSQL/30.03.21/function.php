@@ -9,8 +9,8 @@ function fieldsList($dbLink, $tableName): array
 {
     $sql = "SHOW COLUMNS FROM $tableName";
     $result = mysqli_query($dbLink, $sql);
-    $fields = []; //переменная, в которой будут храниться поля таблицы
-    // создаем цикл, в котором в $fields будем добавлять значения из таблицы не включая поле  "id"
+    $fields = [];
+
     while ($row = mysqli_fetch_assoc($result)) {
         if ($row["Field"] != "id") {
             $fields[] = $row["Field"];

@@ -13,15 +13,17 @@
 </head>
 <body>
 <?php
-include_once "connect.php";
-$sql = "SELECT * FROM `{$config['mysql']['table']}` WHERE id = $_GET[id]";
-$result = mysqli_query($link, $sql);
-$row = mysqli_fetch_assoc($result);
+include_once "connect.php";// подключаем файл connect для соединения с базой данных
+//создаем переменную, в которой формируем запрос для выбора полей из таблицы базы данных
+$sql = "SELECT * FROM `{$config['mysql']['table']}` WHERE id = $_GET[id]";// имя таблицы передается из файла config
+$result = mysqli_query($link, $sql); //создаем переменную, в которой выполняем запрос
+$row = mysqli_fetch_assoc($result); // создаем переменную, в которой возвращаем ряд результата запроса в качестве ассоциативного массива
 ?>
 <form action="edit.php" method="POST">
     <input type="hidden" name="id" value="<?= $row['id'] ?>">
     <?php
-    $fields = fieldsList($link, $config["mysql"]["table"]);
+    $fields = fieldsList($link, $config["mysql"]["table"]);// вызываем функцию, чтобы получить список полей
+    //создаем цикл, который проходит по списку и для каждого элемента генерируем поле ввода
     foreach ($fields as $field) {
         ?>
         <div class="input-group mb-3">
@@ -30,12 +32,8 @@ $row = mysqli_fetch_assoc($result);
         <?php
     }
     ?>
-            <input type="submit" class="btn btn-primary  btn-lg" value="Сохранить">
-        </form>
-    </div>
-    <br>
-    <div class="col">
+    <input class="btn btn-primary" type="submit" value="Сохранить">
 
-    </div>
+</form>
 </body>
 </html>
