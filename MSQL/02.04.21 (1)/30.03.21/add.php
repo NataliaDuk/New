@@ -10,4 +10,4 @@ if (!empty($_POST)) {
 
     mysqli_query($link, $sql);
 }
-header("Location: show.php");
+header("Location: index.php");

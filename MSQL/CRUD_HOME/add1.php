@@ -6,4 +6,4 @@ if (!empty($_POST)) {
     /** @var mysqli $link */
     mysqli_query($link, $sql);
 }
-header("Location: show.php");
+header("Location: index.php");
