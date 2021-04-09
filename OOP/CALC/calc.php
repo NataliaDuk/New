@@ -58,6 +58,13 @@ class Calc
     {
         return $this->a / $this->b;
     }
+    /**функция для возведения числа в степень
+     * @return float
+     */
+    public function pow(): float
+    {
+        return pow($this->a,  $this->b);
+    }
 }
 
 
