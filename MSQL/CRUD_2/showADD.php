@@ -21,7 +21,7 @@
             <h1>Заполните форму:</h1>
             <form action="add1.php" method="post">
                 <?php
-                include_once "connect.php";// подключаем файл connect для соединения с базой данных
+                include_once "connect.php"; // подключаем файл connect для соединения с базой данных
                 /**
                  * @var mysqli $link соединение с базой данных
                  * @var array $config конфигурационные данные из файла config
