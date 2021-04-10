@@ -5,17 +5,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cube</title>
+    <title>Document</title>
 </head>
 <body>
-<h1>Кубик</h1>
+<h1>Трапеция равнобедренная</h1>
 <form action="eval.php" method="post">
-    <input type="text" name="l" placeholder="Длина ребра">
+    <input type="text" name="a" placeholder="Верхнее основание">
+    <input type="text" name="b" placeholder="Нижнее основание">
+    <input type="text" name="h" placeholder="Высота">
     <select name="op">
-        <option value="squareCube">Площадь</option>
-        <option value="perimCube">Периметр</option>
+        <option value="squareTrapez">Площадь</option>
+        <option value="perimTrapez">Периметр</option>
     </select>
     <input type="submit" value="Вычислить">
 </form>
+
 </body>
 </html>
