@@ -1,5 +1,5 @@
+<!--showAdd.php-->
 <!doctype html>
-<!--showADD.php-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,8 +18,7 @@
 
         </div>
         <div class="col">
-            <h1>Заполните форму:</h1>
-            <form action="add1.php" method="post">
+            <form action="add.php" method="post">
                 <?php
                 include_once "connect.php";
                 /**
@@ -30,11 +29,13 @@
                 foreach ($fields as $field) {
                     ?>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="<?= $field ?>" placeholder="<?= $field ?>"> //генерируются поля формы, соответствующие полям таблицы базы данных
+                        <input type="text" class="form-control" name="<?= $field ?>" placeholder="<?= $field ?>">
+                        //генерируются поля формы, соответствующие полям таблицы базы данных
                     </div>
                     <?php
                 }
                 ?>
+
                 <input type="submit" class="btn btn-primary" value="Добавить">
             </form>
         </div>
@@ -42,6 +43,8 @@
 
         </div>
     </div>
+</div>
+
 
 </body>
 </html>

@@ -10,12 +10,9 @@ class Calc
      */
     public float $a;
 
-
-
     /**
      * Calc constructor. инициализирует переменную a
      * @param $a
-
      */
     public function __construct($a)
     {
@@ -47,8 +44,6 @@ class Calc
     {
         return abs($this->a);
     }
-
-
 }
 
 
