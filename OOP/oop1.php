@@ -20,8 +20,8 @@ class Person
         return "Меня зовут $this->name, мне  $this->age лет.";
     }
 }
-//создается экземпляр класса (объект) Person (ключевое слово new)
-$man = new Person(45, "Vasiliy");
+//создается экземпляр класса (объект) Table (ключевое слово new)
+$man = new Table(45, "Vasiliy");
 //обращение к объекту и конкретному полю
 //echo $man->age;
 //echo $man->name;

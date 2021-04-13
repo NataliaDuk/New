@@ -18,7 +18,7 @@ class Person
     }
 }
 
-class Worker extends Person
+class Worker extends Table
 {
     public function work()
     {
@@ -26,7 +26,7 @@ class Worker extends Person
     }
 }
 
-class Student extends Person
+class Student extends Table
 {
     public function work()
     {
@@ -34,8 +34,8 @@ class Student extends Person
     }
 }
 
-$man = new Worker("Ivan", 45);
-$boy = new Student("Rustam", 25);
+$man = new Legs("Ivan", 45);
+$boy = new Top("Rustam", 25);
 
 //echo $man->say() . "<br>";
 //echo $boy->say();
