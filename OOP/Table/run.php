@@ -4,17 +4,18 @@ include 'Legs.php';
 include 'Top.php';
 
 
-$worker = new Legs("Alex", 20);
-echo $worker->say() . "<br>";
-echo $worker->doJob();
-
+$costL = new Legs($_POST["heigtSm"]);
+$costL->setHeigtSm();
+echo $costL->costD() . "<br>";
 echo "<br>";
 
-$student = new Top("Oleg", 18);
-echo $student->say() . "<br>";
-echo $student->doJob();
+$costT = new Top($_POST["squareSm"]);
+$costT->setSquareSm();
+echo $costT->costD() . "<br>";
 echo "<br>";
 
-$ingener = new Ingener("Andrey", 35);
-echo $ingener->say() . "<br>";
-echo $ingener->doJob();
+$cost = new Table($costL, $costT);
+echo $cost->cost();
+
+
+

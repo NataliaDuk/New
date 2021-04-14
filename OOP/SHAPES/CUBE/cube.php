@@ -11,10 +11,10 @@ class Cube
     }
     public function squareCube()
     {
-        return 6*$this->l**2;
+        return $this->l**2*6;
     }
     public function perimCube()
     {
-        return 12*$this->l;
+        return $this->l*12;
     }
 }

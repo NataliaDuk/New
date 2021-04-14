@@ -1,13 +1,8 @@
-<?php
+<<?php
 class Top extends Table
 {
-    public function cost(): float
+    public function costD(): float
     {
-        return $this->square*1;
-    }
-
-    public function doJob(): string
-    {
-        return "Я умею учиться";
+        return $this->square* 1;
     }
 }

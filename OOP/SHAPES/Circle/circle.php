@@ -11,10 +11,10 @@ class Circle
     }
     public function squareCircle()
     {
-        return pi()*$this->r**2;
+        return $this->r**2*pi();
     }
     public function perimCircle()
     {
-        return 2*pi()*$this->r;
+        return $this->r*2*pi();
     }
 }

@@ -2,14 +2,18 @@
 
 abstract class Table
 {
-    protected string $heigt;
-    protected int $square;
+    protected float $heigt;
+    protected float $square;
+    private float $costL;
+    private float $costT;
 
-    public function __construct($heigt, $square)
+
+    public function __construct($heigt, $square, $costL, $costT)
     {
-        $this->heigt=$heigt;
-        $this->square=$square;
+        $this->heigt = $heigt;
+        $this->square = $square;
     }
+
     /**
      * @param string $heigt
      */
@@ -19,24 +23,28 @@ abstract class Table
             $this->heigt = $heigt;
         }
     }
+
     public function setHeigtDm(float $heigt): void
     {
         if ($heigt > 0) {
-            $this->heigt = $heigt*0.1;
+            $this->heigt = $heigt * 0.1;
         }
     }
+
     public function setHeigtM(float $heigt): void
     {
         if ($heigt > 0) {
-            $this->heigt = $heigt*0.01;
+            $this->heigt = $heigt * 0.01;
         }
     }
+
     public function setHeigtInc(float $heigt): void
     {
         if ($heigt > 0) {
-            $this->heigt = $heigt*0.3937007874;
+            $this->heigt = $heigt * 0.3937007874;
         }
     }
+
     /**
      * @param int $square
      */
@@ -46,31 +54,34 @@ abstract class Table
             $this->square = $square;
         }
     }
+
     public function setSquareDm(float $square): void
     {
         if ($square > 0) {
-            $this->square = $square*0.1;
+            $this->square = $square * 0.1;
         }
     }
+
     public function setSquareM(float $square): void
     {
         if ($square > 0) {
-            $this->square = $square*0.01;
+            $this->square = $square * 0.01;
         }
     }
+
     public function setSquareInc(float $square): void
     {
         if ($square > 0) {
-            $this->square = $square*0.3937007874;
+            $this->square = $square * 0.3937007874;
         }
     }
-    public function rashodTopliva($rashod)
-    {
-        if (($this->bak - $rashod) < 0) {
-            $this->bak = 0;
-        } else {
-            $this->bak -= $rashod;
-        }
-    abstract public function cost(): float;
+
+    abstract public function costD(): float;
+
+
+    public function cost($costL, $costT) {
+        return $this->costL+$this->costT+20;
+
+    }
 
 }

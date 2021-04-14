@@ -1,13 +1,8 @@
 <?php
 class Legs extends Table
 {
-    public function say(): string
+    public function costD(): float
     {
-        return "Я рабочий, меня зовут $this->name";
-    }
-
-    public function doJob(): string
-    {
-        return "Я умею копать";
+        return $this->heigt * 4 * 1;
     }
 }
