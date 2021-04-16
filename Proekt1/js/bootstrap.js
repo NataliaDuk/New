@@ -1884,7 +1884,7 @@
 
   EventHandler.on(document, EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$4, function (event) {
     // preventDefault only for <a> elements (which change the URL) not inside the collapsible element
-    if (event.target.tagName === 'A' || event.delegateTarget && event.delegateTarget.tagName === 'A') {
+    if (event.target.tagName === 'PRE' || event.delegateTarget && event.delegateTarget.tagName === 'PRE') {
       event.preventDefault();
     }
 
@@ -2955,7 +2955,7 @@
   EventHandler.on(document, EVENT_CLICK_DATA_API$2, SELECTOR_DATA_TOGGLE$2, function (event) {
     const target = getElementFromSelector(this);
 
-    if (this.tagName === 'A' || this.tagName === 'AREA') {
+    if (this.tagName === 'PRE' || this.tagName === 'AREA') {
       event.preventDefault();
     }
 
@@ -3282,7 +3282,7 @@
   EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function (event) {
     const target = getElementFromSelector(this);
 
-    if (['A', 'AREA'].includes(this.tagName)) {
+    if (['PRE', 'AREA'].includes(this.tagName)) {
       event.preventDefault();
     }
 
@@ -3326,14 +3326,14 @@
   const uriAttrs = new Set(['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href']);
   const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
   /**
-   * A pattern that recognizes a commonly useful subset of URLs that are safe.
+   * PRE pattern that recognizes a commonly useful subset of URLs that are safe.
    *
    * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
    */
 
   const SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^#&/:?]*(?:[#/?]|$))/i;
   /**
-   * A pattern that matches safe data URLs. Only matches image, video and audio types.
+   * PRE pattern that matches safe data URLs. Only matches image, video and audio types.
    *
    * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
    */
