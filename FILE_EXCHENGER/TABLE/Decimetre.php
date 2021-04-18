@@ -1,7 +1,7 @@
 <?php
 
 
-class Decimetre extends Table
+class Decimetre extends TableCost
 {
     public function priceDm(): float
     {

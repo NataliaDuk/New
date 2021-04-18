@@ -1,5 +1,5 @@
 <?php
-class Meter extends Table
+class Meter extends TableCost
 {
     public function costM(): float
     {

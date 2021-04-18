@@ -1,5 +1,5 @@
 <?php
-class Worker extends Table
+class Worker extends TableCost
 {
     public function say(): string
     {

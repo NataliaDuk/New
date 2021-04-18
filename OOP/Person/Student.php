@@ -1,5 +1,5 @@
 <?php
-class Student extends Table
+class Student extends TableCost
 {
     public function say(): string
     {

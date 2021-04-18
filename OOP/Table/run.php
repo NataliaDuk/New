@@ -14,7 +14,7 @@ $costT->setSquareSm();
 echo $costT->costD() . "<br>";
 echo "<br>";
 
-$cost = new Table($costL, $costT);
+$cost = new TableCost($costL, $costT);
 echo $cost->cost();
 
 

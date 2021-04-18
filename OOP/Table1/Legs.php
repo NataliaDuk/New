@@ -1,5 +1,5 @@
 <?php
-class Legs extends Table
+class Legs extends TableCost
 {
     public function costD(): float
     {

@@ -1,7 +1,7 @@
 <?php
 
 
-class Ingener extends Table
+class Ingener extends TableCost
 {
     public function say(): string
     {

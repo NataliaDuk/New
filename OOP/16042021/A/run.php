@@ -1,8 +1,8 @@
 <?php
-include_once "PRE.php";
+include_once "A.php";
 
-$pre = new Pre();
-echo $pre
-    ->setInnerText("Hi \n Привет")
-    ->html();
+$a = new A();
+echo $a
+    ->setHref("https://www.tut.by/")
+    ->setInnerText('тут.бай')->html();
 

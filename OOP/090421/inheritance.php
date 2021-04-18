@@ -18,7 +18,7 @@ class Person
     }
 }
 
-class Worker extends Table
+class Worker extends TableCost
 {
     public function work()
     {
@@ -26,7 +26,7 @@ class Worker extends Table
     }
 }
 
-class Student extends Table
+class Student extends TableCost
 {
     public function work()
     {

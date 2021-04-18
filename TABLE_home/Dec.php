@@ -1,5 +1,5 @@
 <?php
-class Dec extends Table
+class Dec extends TableCost
 {
     public function costDm(): float
     {

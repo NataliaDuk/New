@@ -1,7 +1,7 @@
 <?php
 
 
-class Inch extends Table
+class Inch extends TableCost
 {
     public function priceInch(): float
     {

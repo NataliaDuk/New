@@ -28,7 +28,7 @@
             include_once "Inch.php";
 
 
-            $priceOne = new Table($_POST['square'], $_POST['cylinder']);
+            $priceOne = new TableCost($_POST['square'], $_POST['cylinder']);
 
             if ($_POST['magnitude'] == "priceCm") {
 
