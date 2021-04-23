@@ -4,8 +4,6 @@ class Br
 {
     protected string $innerTextA;
     protected string $innerTextB;
-    protected string $style="";
-
 
     /**
      * @param string $innerTextA
@@ -30,6 +28,6 @@ class Br
     }
     public function html(): string
     {
-        return "$this->innerTextA<br style='$this->style'>$this->innerTextB";
+        return "$this->innerTextA<br>$this->innerTextB";
     }
 }

@@ -8,6 +8,9 @@ abstract class TagOne
     protected string $class="";
     protected string $src="";
     protected string $align="";
+    protected string $tagName="";
+    protected string $height="";
+    protected string $width="";
 
     /**
      * @param string $innerTextA
@@ -53,9 +56,17 @@ abstract class TagOne
         $this->align = $align;
         return $this;
     }
+    /**
+     * @param string $tagName
+     */
+    public function setTagName(string $tagName): static
+    {
+        $this->tagName = $tagName;
+        return $this;
+    }
     public function html()
     {
-
+return "<$this->tagName>";
     }
 
 }
