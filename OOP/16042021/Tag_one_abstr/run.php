@@ -1,7 +1,8 @@
 <?php
 include "autoLoad.php";
-$br= new Br();
+$br = new Br();
 
 echo $br
-->
-->br();
+    ->setInnerTextA("текст до переноса")
+    ->setInnerTextA("текст после переноса")
+    ->html();
