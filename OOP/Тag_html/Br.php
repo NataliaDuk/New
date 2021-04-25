@@ -1,6 +1,6 @@
 <?php
 
-class Br extends TagOne
+class Br extends TagPaired
 {
     protected string $tagName="br";
 }

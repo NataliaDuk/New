@@ -1,7 +1,7 @@
 <?php
 
 
-class Input extends TagOne
+class Input extends TagPaired
 {
 protected string $tagName="input";
 }
