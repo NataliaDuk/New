@@ -29,10 +29,10 @@ abstract class TList
     public function html(): string
     {
         $html = "";
-        array_walk($this->data, function ($li) {
-          $html.="\t<li>$li</li>\n";
-        });
-//        foreach ($this->data as $value) {
+        array_map(function ($li) {
+          return "\t<li>$li</li>\n";
+        }, $this->data);
+        //        foreach ($this->data as $value) {
 //            $html .= "\t<li>$value</li>\n";
 //        }
 

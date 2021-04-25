@@ -4,14 +4,14 @@ include_once "UL.php";
 include_once "OL.php";
 
 
-//$ul = new UL();
-//echo $ul
-//    ->setData(['Иванов', 'Петров', 'Сидоров'])
-//    ->setType("square")
-//    ->html();
-//echo $ul
-//    ->setType("circle")
-//    ->html();
+$ul = new UL();
+echo $ul
+    ->setData(['Иванов', 'Петров', 'Сидоров'])
+    ->setType("square")
+    ->html();
+echo $ul
+    ->setType("circle")
+    ->html();
 
 $ol = new OL();
 echo $ol
