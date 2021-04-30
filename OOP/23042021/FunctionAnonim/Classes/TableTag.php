@@ -37,26 +37,14 @@ class TableTag
      */
     public function html(): string
     {
-        $html = "<table class='$this->class'>";
-        if (!empty($this->headers)) {
-            $html .= "<tr>";
-//            foreach ($this->headers as $cell) {
-//                $html .= "<th>$cell</th>";
-//            }
-            array_walk($this->headers, function ($cell) {
-                echo "<th>$cell</th>";
-            });
-            $html .= "</tr>";
-        }
-        foreach ($this->data as $row) {
-            $html .= "<tr>";
-            foreach ($row as $cell) {
+        $header = "<tr>" . implode("", array_map(fn($cell) => "<th>$cell</th>", $this->headers)) . "</tr>";
 
-                $html .= "<td>$cell</td>";
-            }
-            $html .= "</tr>";
-        }
-        $html .= "</table>";
-        return $html;
+        $html = array_map(
+            fn($row) => "<tr>" . implode("", array_map(fn($cell) => "<td>$cell</td>", $row)) . "</tr>",
+            $this->data
+        );
+
+        return "<table class='$this->class'>$header" . implode("", $html) . "</table>";
+
     }
 }
