@@ -5,6 +5,7 @@ class TList
 {
 protected array $num=[];
 
+
     /**
      * @param array $num
      * @return TList
@@ -15,7 +16,7 @@ protected array $num=[];
         return $this;
     }
 public function html()  {
-        $html="<ol>";
-
+        $html="";
+foreach ()
 }
 }
