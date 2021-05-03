@@ -15,12 +15,29 @@ include_once "autoLoad.php";
 
 $tag = new TableTag();
 echo $tag
-    ->setHeaders(['Имя', 'Фамилия', 'Отчество'])
+    ->setHeaders(['Фамилия', 'Имя', 'Отчество'])
     ->setClass('table table-striped border-primary')
     ->setData([
-        ['Петя', 'Вася', 'Ира'],
-        ['Петя', 'Вася', 'Ира']
+        ['Орлов', 'Александр', 'Иванович'],
+        ['Сидоров', 'Петр', 'Петрович']
     ])
+    ->html();
+$ul = new UL();
+echo $ul
+    ->setData(['Иванов', 'Петров', 'Сидоров'])
+    ->setType("square")
+    ->html();
+echo $ul
+    ->setType("circle")
+    ->html();
+
+$ol = new OL();
+echo $ol
+    ->setData(['Иванов', 'Петров', 'Сидоров'])
+    ->setType("A")
+    ->html();
+echo $ol
+    ->setType("1")
     ->html();
 ?>
 </body>
