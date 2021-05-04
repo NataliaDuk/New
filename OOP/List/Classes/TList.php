@@ -5,15 +5,17 @@ abstract class TList
     protected array $data;
     protected string $type;
     protected string $tagName;
+
     /**
      * TList constructor.
      * @param $data
      */
-    protected function __construct ($data)
+    public function __construct($data)
     {
         $this->data = $data;
         $this->tagName = strtolower(get_class($this));
     }
+
     /**
      * @param array $data
      * @return TList
@@ -23,6 +25,7 @@ abstract class TList
         $this->data = $data;
         return $this;
     }
+
     /**
      * @param string $type
      * @return TList
@@ -33,7 +36,7 @@ abstract class TList
         return $this;
     }
 
-        public function html(): string
+    public function html(): string
     {
         $html = "";
         foreach ($this->data as $value) {

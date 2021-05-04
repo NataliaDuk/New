@@ -12,3 +12,6 @@ $ul= new Ul(['Фролов', 'Галкин', 'Воронов']);
 echo $ul->setType("disk")->html();
 echo $ul->setType("circle")->html();
 echo $ul->setType("square")->html();
+
+echo get_class($ol->setData([]));
+echo get_class($ul->setData([]));
