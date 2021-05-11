@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOP/TicTac_070521" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOP/TicTac_Tatiana" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOP/TicTac_diagonal" vcs="Git" />
   </component>
 </project>
