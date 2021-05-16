@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/OOP/TicTac_070521" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/OOP/TicTac_Tatiana" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/OOP/TicTac_diagonal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOP/TicTac_game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOP/TicTac_ge" vcs="Git" />
   </component>
 </project>
