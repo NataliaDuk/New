@@ -1,6 +1,7 @@
 <?php
 
-namespace Nata;
+namespace First;
+
 class Calc
 {
     protected float $a;
@@ -11,9 +12,14 @@ class Calc
         $this->a = $a;
         $this->b = $b;
     }
-
     public function sum(): float
-{
-    return ($this->a + $this->b) * 2;
-}
+    {
+        return $this->a+$this->b;
+    }
+
+    public function multi(): float
+    {
+        return $this->a*$this->b;
+    }
+
 }

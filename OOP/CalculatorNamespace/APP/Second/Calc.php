@@ -1,6 +1,7 @@
 <?php
 
-namespace Duk;
+namespace Second;
+
 class Calc
 {
     protected float $a;
@@ -10,11 +11,15 @@ class Calc
     {
         $this->a = $a;
         $this->b = $b;
-
     }
-
-    public function sum(): float
+    public function diff(): float
     {
-        return $this->a + $this->b;
+        return $this->a-$this->b;
     }
+
+    public function div(): float
+    {
+        return $this->a/$this->b;
+    }
+
 }
