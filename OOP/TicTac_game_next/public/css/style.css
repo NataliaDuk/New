@@ -1,0 +1,32 @@
+.tictac td {
+    border: 1px black solid;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font: 30px "Arial Black";
+    padding: 5px; /* Поля в ячейках */
+    position: relative; /* Относительное позиционирование */
+
+}
+table {
+
+    width: 25%; /* Ширина таблицы */
+    table-layout: fixed;
+    margin: auto;
+}
+
+.tictac td a {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; /* По ширине ячейки */
+    top: 0; bottom: 0; /* По высоте ячейки */
+    background: greenyellow; /* Цвет фона */
+}
+
+h1 {
+    color: blue;
+    font: 30px "Arial Black";
+}
+h2 {
+    color: red;
+    font: 20px "Arial Black";
+}
