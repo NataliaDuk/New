@@ -1,0 +1,50 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "158275360df8c900c12fd7d11b3662e3",
+    "packages": [
+        {
+            "name": "w1020/orm",
+            "version": "v2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HannaLuniova/ORM.git",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HannaLuniova/ORM/zipball/c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\": "W1020"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ORM",
+            "support": {
+                "issues": "https://github.com/HannaLuniova/ORM/issues",
+                "source": "https://github.com/HannaLuniova/ORM/tree/v2.1"
+            },
+            "time": "2021-05-28T18:14:42+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

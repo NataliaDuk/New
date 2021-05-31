@@ -1,0 +1,40 @@
+{
+    "packages": [
+        {
+            "name": "w1020/orm",
+            "version": "v2.1",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HannaLuniova/ORM.git",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HannaLuniova/ORM/zipball/c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "shasum": ""
+            },
+            "time": "2021-05-28T18:14:42+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\": "W1020"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ORM",
+            "support": {
+                "issues": "https://github.com/HannaLuniova/ORM/issues",
+                "source": "https://github.com/HannaLuniova/ORM/tree/v2.1"
+            },
+            "install-path": "../w1020/orm"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
