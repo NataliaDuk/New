@@ -4,7 +4,8 @@ $config = [
     "servername" => "localhost",
     "username" => "root",
     "password" => "root",
-    "dbname" => "guestbook"
+    "dbname" => "guestbook",
+    "table" => "gb"
 ];
 //
 //use W1020\CRUD;
