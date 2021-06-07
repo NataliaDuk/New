@@ -1,0 +1,73 @@
+{
+    "packages": [
+        {
+            "name": "w1020/html",
+            "version": "v0.0.4",
+            "version_normalized": "0.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rustam-petr/html.git",
+                "reference": "9fbfde8ef89f182378dcc0752f086a69e7bf41bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rustam-petr/html/zipball/9fbfde8ef89f182378dcc0752f086a69e7bf41bf",
+                "reference": "9fbfde8ef89f182378dcc0752f086a69e7bf41bf",
+                "shasum": ""
+            },
+            "time": "2021-06-04T17:41:25+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\HTML\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/rustam-petr/html/issues",
+                "source": "https://github.com/rustam-petr/html/tree/v0.0.4"
+            },
+            "install-path": "../w1020/html"
+        },
+        {
+            "name": "w1020/orm",
+            "version": "v2.1",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HannaLuniova/ORM.git",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HannaLuniova/ORM/zipball/c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "reference": "c6d080d3258b2e733a6aff64a9ada65f3849ec80",
+                "shasum": ""
+            },
+            "time": "2021-05-28T18:14:42+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\": "W1020"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ORM",
+            "support": {
+                "issues": "https://github.com/HannaLuniova/ORM/issues",
+                "source": "https://github.com/HannaLuniova/ORM/tree/v2.1"
+            },
+            "install-path": "../w1020/orm"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
