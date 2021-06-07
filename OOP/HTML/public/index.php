@@ -20,6 +20,7 @@ $data = $table->get();
 $htmlTable = new HtmlTable();
 
 $pagination = new Pagination();
+$
 
 
 ?>
