@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'W1020\\HTML\\' => array($vendorDir . '/w1020/html/src'),
+    'W1020\\ORM8\\' => array($vendorDir . '/w1020/html/src'),
     'W1020\\' => array($vendorDir . '/w1020/orm/W1020'),
 );
