@@ -6,29 +6,23 @@ use W1020\Table;
 
 include "../vendor/autoload.php";
 
-$config = [
-    "servername" => "localhost",
-    "username" => "root",
-    "password" => "root",
-    "dbname" => "guestbook",
-    "table" => "ved"
-];
+$config = include 'config.php';
 
 $table = new Table($config);
-$table->setPageSize(3)->setIdName("nomer");
+$table->setPageSize(3)->setIdName("id");
 $page = (int)($_GET['page'] ?? 1);
 if (isset($_GET['del'])) {
     $table->del($_GET['del']);
     header("Location: ?");
 }
-if (!empty($_POST)) {
+if (isset($_GET['ins'])) {
     $table->ins($_POST);
-    header("Location: ?");
+    header("Location:?");
 }
 
-if (isset($_GET['upd'])) {
-    $table->upd($_POST['id'], $_POST);
-    header("Location: ?");
+if (isset($_GET['edit'])) {
+    $table->upd($_GET["edit"], $_POST);
+    header("Location:?");
 }
 
 //$htmlTable = new htmlTable();
@@ -49,8 +43,8 @@ if (isset($_GET['upd'])) {
 <body>
 <?= (new htmlTable())
     ->setData($table->getPage($page))
-    ->addColumn(fn($v)=>"<a href='?del=$v[nomer]'>Удалить</a>")
-    ->addColumn(fn($v)=>"<a href='edit.php?edit=$v[nomer]'>Редактировать</a>")
+    ->addColumn(fn($v)=>"<a href='?del=$v[id]'>Удалить</a>")
+    ->addColumn(fn($v)=>"<a href='edit.php?edit=$v[id]'>Редактировать</a>")
     ->setClass("table table-success table-striped")
     ->html() ?>
 <!-- <a class="btn btn-primary" href='?'>Добавить</a><br><br>-->

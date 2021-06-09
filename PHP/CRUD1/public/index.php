@@ -15,19 +15,19 @@ $config = [
 ];
 
 $table = new Table($config);
-$table->setPageSize(3)->setIdName("nomer");
+$table->setPageSize(5)->setIdName("id");
 $page = (int)($_GET['page'] ?? 1);
 if (isset($_GET['del'])) {
     $table->del($_GET['del']);
     header("Location: ?");
 }
-if (!empty($_POST)) {
+if (isset($_GET['ins'])) {
     $table->ins($_POST);
     header("Location: ?");
 }
 
-if (isset($_GET['upd'])) {
-    $table->upd($_POST['id'], $_POST);
+if (isset($_GET['edit'])) {
+    $table->upd($_GET['edit'], $_POST);
     header("Location: ?");
 }
 
@@ -49,8 +49,8 @@ if (isset($_GET['upd'])) {
 <body>
 <?= (new htmlTable())
     ->setData($table->getPage($page))
-    ->addColumn(fn($v)=>"<a href='?del=$v[nomer]'>Удалить</a>")
-    ->addColumn(fn($v)=>"<a href='edit.php?ins=$v[nomer]'>Редактировать</a>")
+    ->addColumn(fn($v)=>"<a href='?del=$v[id]'>Удалить</a>")
+    ->addColumn(fn($v)=>"<a href='edit.php?edit=$v[id]'>Редактировать</a>")
     ->setClass("table table-success table-striped")
     ->html() ?>
 <!-- <a class="btn btn-primary" href='?'>Добавить</a><br><br>-->

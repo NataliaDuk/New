@@ -14,28 +14,19 @@ use W1020\Table;
 
 include "../vendor/autoload.php";
 
-$config = [
-    "servername" => "localhost",
-    "username" => "root",
-    "password" => "root",
-    "dbname" => "guestbook",
-    "table" => "ved"
-];
+$config = include 'config.php';
 
 $table = new Table($config);
-$table->setIdName('nomer');
 $comments = $table->columnComments();
 ?>
-<form action="index.php?insert" method="post">
-    <input type="hidden" class="form-control" name="id" value="<?=$_Get['edit']?>">
+<form action="index.php?edit=<?= $_GET['edit'] ?>" method="post">
     <?php
     foreach ($table->columns() as $column) {
         ?>
-        <span><?= $comments[$column] ?></span> <input type="extt" class="form-control" name="<?= $column ?>"><br><br>
+        <?= $comments[$column] ?> <input type="text" name="<?= $column ?>"><br><br>
         <?php
-    }
-    ?>
-    <input type="submit" value="insert">
+    } ?>
+    <input type="submit" value="Редактировать">
 </form>
 </body>
 </html>
