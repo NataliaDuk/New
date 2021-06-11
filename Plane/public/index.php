@@ -15,13 +15,12 @@ use Web\Range;
 </head>
 <body>
 <h1>Вычислить дальность полета</h1>
+<?= (new Plane(20, 1))->flightRange()?>
 
-<?= (new Seats())->setSeats(20)->setPassengers(15)->availableSeats()
-//include_once ("flightRange.php")?>
-<?= (new Range())->setReserve(20)->setConsumption(15)->flightRange()
-//include_once ("flightRange.php")?>
-<!---->
-<!--<h1>Вычислить количество свободных мест</h1>-->
-<?php //include_once ("availableSeats.php")?>
+<h1>Вычислить количество свободных мест</h1>
+
+<?= (new Seats(20, 15))->availableSeats()?>
+
+
 </body>
 </html>

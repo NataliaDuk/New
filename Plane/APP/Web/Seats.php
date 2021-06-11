@@ -3,16 +3,37 @@
 
 namespace Web;
 
-public function __construct($seats, $passengers)
+class Seats 
 {
-    $this->setSeats($seats);
-    $this->setPassengers($passengers);
+        protected string $seats;
+        protected string $passengers;
+    
+        public function __construct($seats, $passengers)
+        {
+            $this->setSeats($seats);
+            $this->setPassengers($passengers);
+        }
+        
+    /**
+     * @param string $seats
+     */
+    public function setSeats(string $seats): static
+    {
+        $this->seats = $seats;
+        return $this;
+    }
 
-}
-class Seats extends Plane
-{
+    /**
+     * @param string $passengers
+     */
+    public function setPassengers(string $passengers): static
+    {
+        $this->passengers = $passengers;
+        return $this;
+    }
 
-    public function availableSeats(): float
+
+    public function availableSeats(): string
     {
         return $this->seats - $this->passengers;
     }
