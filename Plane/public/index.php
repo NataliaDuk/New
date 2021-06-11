@@ -2,7 +2,7 @@
 include "../vendor/autoload.php";
 use Web\Seats;
 use Web\Plane;
-use Web\Range;
+
 ?>
 <!doctype html>
 <html lang="en">
