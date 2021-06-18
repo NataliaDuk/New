@@ -1,0 +1,11 @@
+{
+  "description": "simple MVC application",
+  "license": "MIT",
+  "require": {
+    "w1020/orm": "^2.1",
+    "w1020/html": "^0.0.5"
+  },
+  "autoload": {
+    "psr-4": {"APP\\": "src"}
+  }
+}

@@ -1,0 +1,80 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d9154121c40053def457feb52ee6f14c",
+    "packages": [
+        {
+            "name": "w1020/html",
+            "version": "v0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rustam-petr/html.git",
+                "reference": "4d8889bccda6cff74ab6e9119ecaef5c8c9a7904"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rustam-petr/html/zipball/4d8889bccda6cff74ab6e9119ecaef5c8c9a7904",
+                "reference": "4d8889bccda6cff74ab6e9119ecaef5c8c9a7904",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\HTML\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/rustam-petr/html/issues",
+                "source": "https://github.com/rustam-petr/html/tree/v0.0.5"
+            },
+            "time": "2021-06-08T16:11:39+00:00"
+        },
+        {
+            "name": "w1020/orm",
+            "version": "v2.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HannaLuniova/ORM.git",
+                "reference": "56bb92a703bf4d78c4e510033f26a60e5be51dd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HannaLuniova/ORM/zipball/56bb92a703bf4d78c4e510033f26a60e5be51dd5",
+                "reference": "56bb92a703bf4d78c4e510033f26a60e5be51dd5",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "W1020\\": "W1020"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ORM",
+            "support": {
+                "issues": "https://github.com/HannaLuniova/ORM/issues",
+                "source": "https://github.com/HannaLuniova/ORM/tree/v2.1.10"
+            },
+            "time": "2021-06-11T17:05:49+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

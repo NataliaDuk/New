@@ -1,9 +1,3 @@
-<?php
-include "../vendor/autoload.php";
-use Web\Seats;
-use Web\Airplane;
-
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,16 +5,14 @@ use Web\Airplane;
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-<h1>Вычислить дальность полета</h1>
-<?= (new Airplane(20, 1))->flightRange()?>
+<?php
 
-<h1>Вычислить количество свободных мест</h1>
+$this->body();
 
-<?= (new Seats(20, 15))->availableSeats()?>
-
-
+?>
 </body>
 </html>
