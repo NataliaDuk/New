@@ -1,0 +1,9 @@
+{
+  "name": "w1020/html",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "W1020\\HTML\\": "src"
+    }
+  }
+}

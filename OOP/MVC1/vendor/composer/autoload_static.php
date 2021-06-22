@@ -21,20 +21,20 @@ class ComposerStaticInit33fabe0b29d69b97955b51881cee0c94
     public static $prefixDirsPsr4 = array (
         'W1020\\HTML\\' => 
         array (
-            0 => __DIR__ . '/..',
+            0 => __DIR__ . '/..' . '/w1020/html/src',
         ),
         'W1020\\' => 
         array (
-            0 => __DIR__ . '/..',
+            0 => __DIR__ . '/..' . '/w1020/orm/W1020',
         ),
         'APP\\' => 
         array (
-            0 => __DIR__ . '/../..',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
-        'Composer\\InstalledVersions' => __DIR__ . '/..',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
