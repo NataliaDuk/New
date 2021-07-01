@@ -13,7 +13,13 @@ use APP\PhpTable;
 //$json->update(2, ["Name" =>"Ivan", "Salary"=>1000]);
 //$db=new DB(new JsonTable("table3.json"));
 
-$db= new DB(new PhpTable("table.php"));
+// $db= new DB(new PhpTable("table.php"));
+// $db->insert(["Name" => "Сидоров", "Salary" => 1500]);
+// $db->insert(["Name" => "Orlov", "Salary" => 1200]);
+// $db->update(1, ["Name" => "Orlov", "Salary" => 2000]);
+
+
+$db= new DB(new TxtTable("table.txt"));
 $db->insert(["Name" => "Сидоров", "Salary" => 1500]);
 $db->insert(["Name" => "Orlov", "Salary" => 1200]);
 $db->update(1, ["Name" => "Orlov", "Salary" => 2000]);
