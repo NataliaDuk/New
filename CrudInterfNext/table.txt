@@ -1,0 +1,3 @@
+0;Name:Orlov;Salary:2000
+1;Name:Orlov;Salary:2000
+2;Name:Orlov;Salary:1200
