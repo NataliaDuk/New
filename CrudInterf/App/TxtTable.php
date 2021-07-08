@@ -30,7 +30,7 @@ class TxtTable extends AbstractTable //implements ICrud
     public function read(): array
     {
         if (file_exists($this->fileName)) {
-            return file_get_contents($this->fileName);
+            return explode(";", file_get_contents($this->fileName));
         } else {
             return [];
         }
@@ -40,6 +40,6 @@ class TxtTable extends AbstractTable //implements ICrud
 
     protected function save(array $table): void
     {
-        file_put_contents($this->fileName, implode(";", $table);
+        file_put_contents($this->fileName, implode(";", $table), FILE_APPEND);
     }
 }
