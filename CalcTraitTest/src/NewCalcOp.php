@@ -9,5 +9,5 @@ class NewCalcOp
     use AbsTrait;
     use CosTrait;
     use SqrTrait;
-    use SqrtTrait;
+    use SqrRootTrait;
 }
