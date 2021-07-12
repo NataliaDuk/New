@@ -11,6 +11,6 @@ trait CountPunctuation
      */
     public function countPunctuation(): int
     {
-    return preg_match_all("/\,|./", $this->str);
+    return preg_match_all("/\,|\./", $this->str);
     }
 }
