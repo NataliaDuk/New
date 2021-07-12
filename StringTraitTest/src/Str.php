@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Str
+class Str //implements IStr
 {
     protected string $str;
 

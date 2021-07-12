@@ -20,6 +20,14 @@ private  NewStr $str;
     }
     public function testCountPunctuation()
     {
-        $this->assertEquals(3, $this->str->setStr("Hello,1,2.3")->countPunctuation());
+        $this->assertEquals(3, $this->str->setStr("Hello,1,2,3")->countPunctuation());
+    }
+    public function testStrLower()
+    {
+        $this->assertEquals("hello", $this->str->setStr("Hello")->strLower);
+    }
+    public function testStrUpper()
+    {
+        $this->assertEquals("HELLO", $this->str->setStr("Hello")->strUpper);
     }
 }
