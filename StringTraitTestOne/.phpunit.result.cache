@@ -1,0 +1,1 @@
+{"version":1,"defects":{"NewStrTest::testStr":3,"NewStrTest::testCountPunct":4,"NewStrTest::testCountPunctuation":3},"times":{"NewStrTest::testStr":0.006,"NewStrTest::testCountDigits":0,"NewStrTest::testCountPunct":0.002,"NewStrTest::testCountPunctuation":0}}
