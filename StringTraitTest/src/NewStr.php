@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App;
-
 
 class NewStr extends Str //implements IStr
 {

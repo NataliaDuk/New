@@ -9,5 +9,8 @@
   },
   "scripts": {
     "test": "phpunit --testsuite mytests"
+  },
+  "require": {
+    "ext-mbstring": "*"
   }
 }
